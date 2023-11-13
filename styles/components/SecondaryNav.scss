@@ -1,0 +1,271 @@
+.secondary-nav {
+  width: 100%;
+  .hamburger-menu {
+    display: block;
+    text-transform: none;
+    .menu-icon {
+      background-image: var(--logo_tm_menu_icon);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: em(20);
+      width: em(20);
+      position: absolute;
+      right: em(19);
+      top: em(-50);
+    }
+    .w1 {
+      padding: em(43) em(20) 0 em(20);
+      position: relative;
+      .tm-close {
+        position: absolute;
+        right: em(20);
+        top: 0;
+        width: 1.875em;
+        height: 1.875em;
+      }
+
+      .w2 {
+        margin-top: em(26);
+
+        ul {
+          li {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: em(18) 0;
+            border-bottom: 1px solid #bababa;
+
+            &:first-child {
+              border-top: 1px solid #bababa;
+            }
+
+            span {
+              // color: var(--black-900, #090c0f);
+              // font: 400 em(16) "Inter";
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+
+              &::after {
+                background: var(--tm-right-chevron) no-repeat right center;
+                width: 1.25em;
+                height: 1.25em;
+                content: "";
+                display: inline-block;
+              }
+            }
+          }
+        }
+      }
+
+      .w3 {
+        margin-top: em(19);
+        height: 100%;
+        overflow-y: scroll;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        max-height: 82vh;
+        .w4 {
+          & > .w1 {
+            display: flex;
+            padding: em(8) 0;
+            align-items: center;
+            justify-items: center;
+            gap: em(119);
+            margin-bottom: em(32);
+            justify-content: center;
+            .title {
+              color: var(--tm-neutral-900);
+              display: flex;
+
+              &::before {
+                background: var(--tm-left-chevron) no-repeat left center;
+                width: 1.25em;
+                height: 1.25em;
+                content: "";
+                display: inline-block;
+                position: absolute;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    & > .w1 {
+      @media screen and (max-width: $bp-tablet) {
+        margin-top: em(-58);
+      }
+    }
+
+    @media (min-width: ($bp-tablet+1px)) {
+      display: none;
+    }
+    .faq-accordion {
+      padding: 0;
+      text-transform: capitalize;
+      .w1 {
+        padding: 0;
+      }
+    }
+  }
+
+  .sub-menu {
+    display: none;
+    position: relative;
+
+    @media (min-width: ($bp-tablet+1px)) {
+      display: block;
+    }
+
+    .navigation {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 2.778vw;
+      justify-content: flex-end;
+      padding-right: em(70);
+
+      li {
+        padding: em(23) 0 em(22);
+
+        //Header has a font-type that's a special case (we don't have an exact match in our typography file)
+        //Figma shows it as Gotham, but we use Gotham bold throughout the app, and the font-weight 500 isn't available, so we can't make it lighter.
+        h5 {
+          font-weight: 500;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .menu-wrapper {
+      border-top: 1px solid var(--tm_neutral_300);
+      display: none;
+      position: absolute;
+      top: em(59);
+      z-index: 3;
+      background: white;
+      width: calc(100vw - em(12));
+      left: em(-12);
+
+      &.active {
+        display: flex;
+      }
+
+      .menu-list {
+        display: flex;
+        flex-grow: 1;
+        padding: em(38) 0;
+
+        .list-wrapper {
+          width: 13.334vw;
+
+          &:nth-child(1) {
+            border-right: 1px solid gray;
+            padding-right: em(53);
+            margin: 0 em(58) 0 em(60);
+          }
+
+          h6 {
+            // @include text-transform;
+            text-transform: uppercase;
+            margin-bottom: em(18);
+          }
+
+          ul {
+            // color: var(--tm_neutral_700);
+            // font: 400 em(14) "Inter";
+
+            li {
+              margin-bottom: em(12);
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .nav-banner {
+    padding: em(31) 0 em(10);
+    display: flex;
+    gap: em(16);
+    flex-direction: column;
+
+    @media (min-width: ($bp-tablet+1px)) {
+      padding: em(38) em(58) em(38) em(44);
+      flex-direction: row;
+      gap: em(76);
+      background-color: var(--tm_neutral_100);
+    }
+    &.hide {
+      display: none;
+    }
+    & > .nav-card {
+      width: 100%;
+      padding: 0;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 0;
+
+        @media (min-width: $bp-tablet) {
+          width: em(263);
+        }
+      }
+
+      figcaption {
+        text-transform: initial;
+        padding: em(12) 0;
+      }
+
+      p {
+        padding: em(15) 0;
+      }
+
+      // .tm-button {
+      //   margin: em(15) 0;
+      //   display: inline-block;
+      // }
+
+      .w4 {
+        width: 100%;
+
+        @media (min-width: $bp-mobile) {
+          width: 37.5vw;
+        }
+
+        @media (min-width: $bp-tablet) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .icon-before-link {
+    display: flex;
+    width: 100%;
+
+    &::before {
+      content: "";
+      display: inline-block;
+    }
+  }
+
+  .icon-after-link {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      display: inline-block;
+    }
+  }
+}

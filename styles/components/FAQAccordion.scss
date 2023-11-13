@@ -1,0 +1,152 @@
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  max-width: em(872);
+
+  .title {
+    margin-bottom: em(32);
+    text-align: center;
+
+    @media (max-width: ($bp-tablet)) {
+      margin-bottom: em(24);
+    }
+  }
+
+  .w1 {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--tm_neutral_500);
+    //min-height: em(72);
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .w2 {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      cursor: pointer;
+      width: 100%;
+
+      .heading {
+        width: 73.27%;
+      }
+
+      .btn {
+        width: 1.25em;
+        height: 1.25em;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .open {
+        background-image: var(--tm-plus-black);
+      }
+
+      .close {
+        background-image: var(--tm-minus-black);
+      }
+    }
+
+    .w3 {
+      overflow: hidden;
+      visibility: hidden;
+      height: auto;
+      padding: 0;
+      height: 0;
+      transform-origin: top;
+      transform: scaleY(0);
+      transition: transform 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+      margin-top: 1em;
+      max-width: 87%;
+      opacity: 0;
+
+      &.open {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        transform: scaleY(1);
+        transition: transform 0.1s cubic-bezier(0.22, 0.61, 0.36, 1);
+        visibility: visible;
+        order: 3;
+        opacity: 1;
+      }
+    }
+  }
+
+  .w1:last-child {
+    border-bottom: 1px solid var(--tm_neutral_500);
+  }
+}
+
+
+.nav-accordion {
+  .faq-accordion {
+    @media (max-width: ($bp-tablet+1px)) {
+      
+      max-width: 100%;
+    }
+
+    .accordion-title {
+      margin-bottom: 0;
+    }
+
+    .w1 {
+      padding: 0;
+
+      display: flex;
+      flex-direction: column;
+      border-top: em(1) solid var(--tm_neutral_500);
+      width: 100%;
+      .plusIcon {
+        background: var(--tm-plus-black) no-repeat right center;
+      }
+
+      .minusIcon {
+        background: var(--tm-minus-black) no-repeat right center;
+      }
+      h4 {
+        padding: em(18) 0;
+        cursor: pointer;
+
+        &::after {
+          width: 1.25em;
+          height: 1.25em;
+        }
+
+        @media (min-width: ($bp-tablet+1px)) {
+          width: 73.28%;
+        }
+      }
+    }
+    .w2 {
+      overflow: hidden;
+      display: none;
+      padding: 0;
+      max-height: 0;
+      transition: max-height 0.3s ease;
+      width: 0;
+      margin-top: 1em;
+
+      &.open {
+        display: flex;
+        flex-direction: column;
+        max-height: fit-content;
+        transition: max-height 0.3s ease;
+        visibility: visible;
+        border-top: 1px solid var(--tm_neutral_500);
+        padding: em(18) 0;
+        width: 100%;
+        gap: em(24);
+        .description {
+          color: var(--tm_neutral_700);          
+        }
+      }
+    }
+
+    .w1:first-child {
+      border: none;
+    }
+  }
+}

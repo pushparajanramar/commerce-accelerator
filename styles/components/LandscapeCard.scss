@@ -1,0 +1,125 @@
+$bp-mobile-wide: 767px;
+$bp-desktop-wide: 1920px;
+
+.landscape-card {
+  padding: em(19);
+  padding-right: 0;
+
+  @media (min-width: ($bp-tablet+1px)) {
+    padding: em(48) 0;
+  }
+  .w1 {
+    display: flex;
+    overflow: auto;
+    flex-wrap: var(--wrap-cards, wrap);
+    gap: em(16);
+
+    @media (max-width: ($bp-tablet)) {
+      padding: 0;
+    }
+    @media (min-width: ($bp-tablet+1px)) {
+      column-gap: em(32);
+      row-gap: em(32);
+      display: grid;
+      grid-template-columns: repeat(var(--column-count, 3), 1fr);
+    }
+
+    //Hiding scrollbars (it's not possible to hide them in Firefox)
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent; /* Makes it hidden by default */
+    }
+    -ms-overflow-style: none; /* Hide scrollbar */
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: var(--image-heights, auto);
+  }
+  .category {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: em(24);
+    box-shadow: var(--box-shadow, none);
+    background-color: var(--bg-color);
+    margin: 0;
+    &:last-child {
+      padding-right: em(19);
+    }
+    @media (min-width: ($bp-tablet+1px)) {
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+    .w2 {
+      width: 100%;
+      &.nowrap {
+        width: 70vw;
+        @media (min-width: ($bp-mobile)) {
+          width: 60vw;
+        }
+        @media (min-width: ($bp-mobile-wide)) {
+          width: 37.5vw;
+        }
+        @media (min-width: ($bp-tablet+1px)) {
+          width: 100%;
+        }
+      }
+    }
+    .w3 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-grow: 1;
+      background-color: var(--tm_neutral_0);
+      .w4 {
+        gap: em(12);
+        display: flex;
+        color: var(--tm_neutral_800);
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: em(12);
+      }
+      .w5 {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 3em;
+        flex-direction: row;
+        a {
+          margin: 0;
+        }
+        @media (max-width: ($bp-tablet+1px)) {
+          flex-direction: column;
+          gap: 0;
+          a {
+            margin: 0;
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+}
+
+.landscape-card.wrap {
+  padding-right: em(0);
+  .w1 {
+    gap: em(32);
+    justify-content: center;
+  }
+  @media (max-width: $bp-tablet) {
+    padding-right: em(19);
+    .category {
+      width: 23.5em;
+      &:last-child {
+        padding-right: em(0);
+      }
+    }
+  }
+}

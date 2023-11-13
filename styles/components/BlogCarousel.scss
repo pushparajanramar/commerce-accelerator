@@ -1,0 +1,94 @@
+.blog-carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(em(306), 1fr));
+  align-items: stretch;
+  box-sizing: border-box;
+
+  //We wrap the cards in a list for accesibility
+  ul,
+  li {
+    display: contents;
+    
+  }
+  li{
+    display: inline-flex;
+    margin-right: em(24);
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &.no-wrap {
+    display: flex; /* Makes the container a flexbox */
+    flex-wrap: nowrap; /* Prevents wrapping of children */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden;
+    //padding-right: em(102); /* Add padding equal to 1/3rd of the card's width */
+
+    //Hiding scrollbars (it's not possible to hide them in Firefox)
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent; /* Makes it hidden by default */
+    }
+    -ms-overflow-style: none; /* Hide scrollbar */
+    @media screen and (max-width:$bp-mobile) {
+      display: flex;
+      gap: 0;
+      column-gap:0;
+    }
+    li{
+      @media screen and (max-width:$bp-mobile) {
+        flex: 0 0 calc(100vw - 118px);
+        min-width: calc(100vw - 118px);
+        display: inline-flex;
+      }
+      .w1{
+        @media screen and (max-width:$bp-mobile) {
+          flex: 0 0 100%;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+
+  .w1 {
+    display: flex;
+    width: em(290);
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-direction: column;
+    box-shadow: 0px 8px 20px 0px rgba(108, 119, 130, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+   
+    .w3 {
+      flex-grow: 1;
+      display: flex;
+      padding: 1em 0.75em 2em 0.75em;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      background-color: var(--tm_neutral_0);
+      gap: 0.5em;
+      .blog-category {
+        font-weight: 700;
+      }
+    }
+  }
+  .w2 {
+    min-width: em(226);
+    min-height: em(203);
+    position: relative;
+  }
+  .date {
+    margin-top: auto;
+  }
+}

@@ -1,0 +1,31 @@
+export default {
+    home: '/',
+    searchPage: '/search',
+    cart: '/cart',
+    api: {
+        autosuggestion: '/api/auto-suggest',
+        autosuggestionProducts: '/api/auto-suggest/products',
+        categoryBasedProducts: '/api/category/products',
+        relatedAllItems: '/api/related/all',
+        similarItems: '/api/similar/items',
+        productDetail: '/api/product',
+        revalidateByTag: '/api/revalidate/tag',
+        revalidateByPath: '/api/revalidate/path',
+        pageInformation: '/api/page/information',
+        productCarousel: '/api/product/carousel',
+        breadcrumb: '/api/category/breadcrumb',
+        sizeChartInformation: '/api/size-chart/information',
+        authToken: '/api/auth/token',
+        categoryFacets: '/api/category/facets',
+        pageGlobalInformation: '/api/page/globals',
+        productStock: "/api/product",
+        guestToken: '/api/auth/anonymous',
+        createCart: '/api/cart/create',
+        addProductToCart: '/api/cart/product/add',
+        emailSubscription: '/api/auth/email/subscription',
+        landingPage: '/api/page/landing',
+        cart:'/cart',
+        retrieveCart: '/api/cart/retrieve',
+    }
+
+}

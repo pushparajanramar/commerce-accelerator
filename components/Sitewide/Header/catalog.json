@@ -1,0 +1,1918 @@
+{
+  "catalogs": [
+    {
+      "id": "masterProductCatalog",
+      "name": "TM Master Product Catalog",
+      "url": "/masterProductCatalog",
+      "catalogVersions": [
+        {
+          "id": "Staged",
+          "url": "/masterProductCatalog/Staged",
+          "categories": []
+        },
+        {
+          "id": "Online",
+          "url": "/masterProductCatalog/Online",
+          "categories": [
+            {
+              "id": "shirts",
+              "name": "Shirts",
+              "url": "/Shirts/c/shirts",
+              "subcategories": []
+            },
+            {
+              "id": "0326",
+              "name": "Sale Outerwear",
+              "url": "/Sale-Outerwear/c/0326",
+              "subcategories": []
+            },
+            {
+              "id": "0113",
+              "name": "Shop The Look",
+              "url": "/Shop-The-Look/c/0113",
+              "subcategories": []
+            },
+            {
+              "id": "041",
+              "name": "Featured",
+              "url": "/Featured/c/041",
+              "subcategories": []
+            },
+            {
+              "id": "0272",
+              "name": "Golf Nerd",
+              "url": "/Golf-Nerd/c/0272",
+              "subcategories": []
+            },
+            {
+              "id": "01911",
+              "name": "The Shoe Guy",
+              "url": "/The-Shoe-Guy/c/01911",
+              "subcategories": []
+            },
+            {
+              "id": "0114",
+              "name": "Catalog",
+              "url": "/Catalog/c/0114",
+              "subcategories": []
+            },
+            {
+              "id": "0168",
+              "name": "TM X Bumpboxx",
+              "url": "/TM-X-Bumpboxx/c/0168",
+              "subcategories": []
+            },
+            {
+              "id": "0127",
+              "name": "Back to Basics",
+              "url": "/Back-to-Basics/c/0127",
+              "subcategories": []
+            },
+            {
+              "id": "0445",
+              "name": "Polos",
+              "url": "/Polos/c/0445",
+              "subcategories": []
+            },
+            {
+              "id": "0275",
+              "name": "Phenom Shoes",
+              "url": "/Phenom-Shoes/c/0275",
+              "subcategories": []
+            },
+            {
+              "id": "0325",
+              "name": "Sale Button-Ups",
+              "url": "/Sale-Button-Ups/c/0325",
+              "subcategories": []
+            },
+            {
+              "id": "0451",
+              "name": "Shirts & Tops",
+              "url": "/Shirts-Tops/c/0451",
+              "subcategories": []
+            },
+            {
+              "id": "0137",
+              "name": "Mens Golf Polos",
+              "url": "/Mens-Golf-Polos/c/0137",
+              "subcategories": []
+            },
+            {
+              "id": "01210",
+              "name": "Jetsetter",
+              "url": "/Jetsetter/c/01210",
+              "subcategories": []
+            },
+            {
+              "id": "0324",
+              "name": "Sale Tees",
+              "url": "/Sale-Tees/c/0324",
+              "subcategories": []
+            },
+            {
+              "id": "0122",
+              "name": "The Must Haves",
+              "url": "/The-Must-Haves/c/0122",
+              "subcategories": []
+            },
+            {
+              "id": "0184",
+              "name": "New Jersey",
+              "url": "/New-Jersey/c/0184",
+              "subcategories": []
+            },
+            {
+              "id": "0200",
+              "name": "New Hats",
+              "url": "/New-Hats/c/0200",
+              "subcategories": []
+            },
+            {
+              "id": "0163",
+              "name": "Other",
+              "url": "/Other/c/0163",
+              "subcategories": []
+            },
+            {
+              "id": "02415",
+              "name": "Golf Belts",
+              "url": "/Golf-Belts/c/02415",
+              "subcategories": []
+            },
+            {
+              "id": "01441",
+              "name": "Shorts",
+              "url": "/Shorts/c/01441",
+              "subcategories": []
+            },
+            {
+              "id": "01233",
+              "name": "His & Hers Cloud Collection",
+              "url": "/His-Hers-Cloud-Collection/c/01233",
+              "subcategories": []
+            },
+            {
+              "id": "01916",
+              "name": "Date Night In",
+              "url": "/Date-Night-In/c/01916",
+              "subcategories": []
+            },
+            {
+              "id": "0121",
+              "name": "Essentials",
+              "url": "/Essentials/c/0121",
+              "subcategories": []
+            },
+            {
+              "id": "01551",
+              "name": "Hats",
+              "url": "/Hats/c/01551",
+              "subcategories": []
+            },
+            {
+              "id": "01226",
+              "name": "The Perfect Short",
+              "url": "/The-Perfect-Short/c/01226",
+              "subcategories": []
+            },
+            {
+              "id": "01912",
+              "name": "Graphic Tee & Hat $50",
+              "url": "/Graphic-Tee-Hat-50/c/01912",
+              "subcategories": []
+            },
+            {
+              "id": "0123",
+              "name": "Paradise Found",
+              "url": "/Paradise-Found/c/0123",
+              "subcategories": []
+            },
+            {
+              "id": "0449",
+              "name": "Jackets",
+              "url": "/Jackets/c/0449",
+              "subcategories": []
+            },
+            {
+              "id": "01241",
+              "name": "James' Picks",
+              "url": "/James-Picks/c/01241",
+              "subcategories": []
+            },
+            {
+              "id": "0453",
+              "name": "Gifts For Her",
+              "url": "/Gifts-For-Her/c/0453",
+              "subcategories": []
+            },
+            {
+              "id": "01324",
+              "name": "Tees",
+              "url": "/Tees/c/01324",
+              "subcategories": []
+            },
+            {
+              "id": "01213",
+              "name": "Just Add Water",
+              "url": "/Just-Add-Water/c/01213",
+              "subcategories": []
+            },
+            {
+              "id": "0504",
+              "name": "Filter by Golf Shoes",
+              "url": "/Filter-by-Golf-Shoes/c/0504",
+              "subcategories": []
+            },
+            {
+              "id": "brands",
+              "url": "//c/brands",
+              "subcategories": []
+            },
+            {
+              "id": "01211",
+              "name": "The Perfect Button-Up",
+              "url": "/The-Perfect-Button-Up/c/01211",
+              "subcategories": []
+            },
+            {
+              "id": "GiftCards",
+              "name": "Gift Cards",
+              "url": "/Gift-Cards/c/GiftCards",
+              "subcategories": []
+            },
+            {
+              "id": "0443",
+              "name": "Layers",
+              "url": "/Layers/c/0443",
+              "subcategories": []
+            },
+            {
+              "id": "0337",
+              "name": "Test 60% Doorbusters",
+              "url": "/Test-60-Doorbusters/c/0337",
+              "subcategories": []
+            },
+            {
+              "id": "01232",
+              "name": "Corey's Picks",
+              "url": "/Corey-s-Picks/c/01232",
+              "subcategories": []
+            },
+            {
+              "id": "0338",
+              "name": "Test 50%",
+              "url": "/Test-50-/c/0338",
+              "subcategories": []
+            },
+            {
+              "id": "043",
+              "name": "Limited Edition",
+              "url": "/Limited-Edition/c/043",
+              "subcategories": []
+            },
+            {
+              "id": "01218",
+              "name": "Bottoms Up",
+              "url": "/Bottoms-Up/c/01218",
+              "subcategories": []
+            },
+            {
+              "id": "01237",
+              "name": "Chris Pratt's Picks",
+              "url": "/Chris-Pratt-s-Picks/c/01237",
+              "subcategories": []
+            },
+            {
+              "id": "01214",
+              "name": "Button-Up Your Look",
+              "url": "/Button-Up-Your-Look/c/01214",
+              "subcategories": []
+            },
+            {
+              "id": "0138",
+              "name": "Hoodies & Sweatshirts",
+              "url": "/Hoodies-Sweatshirts/c/0138",
+              "subcategories": []
+            },
+            {
+              "id": "0334",
+              "name": "50% Off Hats",
+              "url": "/50-Off-Hats/c/0334",
+              "subcategories": []
+            },
+            {
+              "id": "0333",
+              "name": "50% Off Bottoms",
+              "url": "/50-Off-Bottoms/c/0333",
+              "subcategories": []
+            },
+            {
+              "id": "01221",
+              "name": "TM X Corona Premier",
+              "url": "/TM-X-Corona-Premier/c/01221",
+              "subcategories": []
+            },
+            {
+              "id": "0503",
+              "name": "Filter by Golf Bottoms",
+              "url": "/Filter-by-Golf-Bottoms/c/0503",
+              "subcategories": []
+            },
+            {
+              "id": "01917",
+              "name": "Date Night Out",
+              "url": "/Date-Night-Out/c/01917",
+              "subcategories": []
+            },
+            {
+              "id": "0149",
+              "name": "Jackets",
+              "url": "/Jackets/c/0149",
+              "subcategories": []
+            },
+            {
+              "id": "01293",
+              "name": "Heater Series",
+              "url": "/Heater-Series/c/01293",
+              "subcategories": []
+            },
+            {
+              "id": "01910",
+              "name": "The Traveler",
+              "url": "/The-Traveler/c/01910",
+              "subcategories": []
+            },
+            {
+              "id": "0167",
+              "name": "Face Masks",
+              "url": "/Face-Masks/c/0167",
+              "subcategories": []
+            },
+            {
+              "id": "01219",
+              "name": "Performance Cloud",
+              "url": "/Performance-Cloud/c/01219",
+              "subcategories": []
+            },
+            {
+              "id": "0246",
+              "name": "Club Covers",
+              "url": "/Club-Covers/c/0246",
+              "subcategories": []
+            },
+            {
+              "id": "01215",
+              "name": "The Perfect Polo",
+              "url": "/The-Perfect-Polo/c/01215",
+              "subcategories": []
+            },
+            {
+              "id": "0150",
+              "name": "Vests",
+              "url": "/Vests/c/0150",
+              "subcategories": []
+            },
+            {
+              "id": "037",
+              "name": "Our Favorite Time Of Year",
+              "url": "/Our-Favorite-Time-Of-Year/c/037",
+              "subcategories": []
+            },
+            {
+              "id": "036",
+              "name": "Annual Gift",
+              "url": "/Annual-Gift/c/036",
+              "subcategories": []
+            },
+            {
+              "id": "0154",
+              "name": "Other Hats",
+              "url": "/Other-Hats/c/0154",
+              "subcategories": []
+            },
+            {
+              "id": "033",
+              "name": "Warehouse Sale",
+              "url": "/Warehouse-Sale/c/033",
+              "subcategories": [
+                {
+                  "id": "0339",
+                  "name": "40% Off Tops",
+                  "url": "/Warehouse-Sale/40-Off-Tops/c/0339",
+                  "subcategories": []
+                },
+                {
+                  "id": "03340",
+                  "name": "40% Off Bottoms",
+                  "url": "/Warehouse-Sale/40-Off-Bottoms/c/03340",
+                  "subcategories": []
+                },
+                {
+                  "id": "03341",
+                  "name": "40% Off Hats",
+                  "url": "/Warehouse-Sale/40-Off-Hats/c/03341",
+                  "subcategories": []
+                },
+                {
+                  "id": "03342",
+                  "name": "40% Off Accessories",
+                  "url": "/Warehouse-Sale/40-Off-Accessories/c/03342",
+                  "subcategories": []
+                },
+                {
+                  "id": "03343",
+                  "name": "60% Off Boxers",
+                  "url": "/Warehouse-Sale/60-Off-Boxers/c/03343",
+                  "subcategories": []
+                },
+                {
+                  "id": "0336",
+                  "name": "Shop All Sale",
+                  "url": "/Warehouse-Sale/Shop-All-Sale/c/0336",
+                  "subcategories": []
+                }
+              ]
+            },
+            {
+              "id": "0162",
+              "name": "Beach Towels",
+              "url": "/Beach-Towels/c/0162",
+              "subcategories": []
+            },
+            {
+              "id": "0201",
+              "name": "New T-Shirts",
+              "url": "/New-T-Shirts/c/0201",
+              "subcategories": []
+            },
+            {
+              "id": "0413",
+              "name": "Best Sellers",
+              "url": "/Best-Sellers/c/0413",
+              "subcategories": []
+            },
+            {
+              "id": "0502",
+              "name": "Filter by Golf Tops",
+              "url": "/Filter-by-Golf-Tops/c/0502",
+              "subcategories": []
+            },
+            {
+              "id": "0179",
+              "name": "New Polos",
+              "url": "/New-Polos/c/0179",
+              "subcategories": []
+            },
+            {
+              "id": "0273",
+              "name": "Performance Accessories",
+              "url": "/Performance-Accessories/c/0273",
+              "subcategories": []
+            },
+            {
+              "id": "01212",
+              "name": "Red White and Blue",
+              "url": "/Red-White-and-Blue/c/01212",
+              "subcategories": []
+            },
+            {
+              "id": "0446",
+              "name": "Tees",
+              "url": "/Tees/c/0446",
+              "subcategories": []
+            },
+            {
+              "id": "01220",
+              "name": "The Cloud Flannel",
+              "url": "/The-Cloud-Flannel/c/01220",
+              "subcategories": []
+            },
+            {
+              "id": "0274",
+              "name": "Comfort Accessories",
+              "url": "/Comfort-Accessories/c/0274",
+              "subcategories": []
+            },
+            {
+              "id": "0356",
+              "name": "Shop All Sale",
+              "url": "/Shop-All-Sale/c/0356",
+              "subcategories": []
+            },
+            {
+              "id": "01217",
+              "name": "Outerwear Collection",
+              "url": "/Outerwear-Collection/c/01217",
+              "subcategories": []
+            },
+            {
+              "id": "0146",
+              "name": "Mens Golf Pants",
+              "url": "/Mens-Golf-Pants/c/0146",
+              "subcategories": []
+            },
+            {
+              "id": "0147",
+              "name": "Mens Golf Shorts",
+              "url": "/Mens-Golf-Shorts/c/0147",
+              "subcategories": []
+            },
+            {
+              "id": "0335",
+              "name": "50% Off Accessories",
+              "url": "/50-Off-Accessories/c/0335",
+              "subcategories": []
+            },
+            {
+              "id": "01225",
+              "name": "St. Patricks Day",
+              "url": "/St-Patricks-Day/c/01225",
+              "subcategories": []
+            },
+            {
+              "id": "01228",
+              "name": "Partner Offer",
+              "url": "/Partner-Offer/c/01228",
+              "subcategories": []
+            },
+            {
+              "id": "categories",
+              "url": "//c/categories",
+              "subcategories": []
+            },
+            {
+              "id": "0169",
+              "name": "No Promotions",
+              "url": "/No-Promotions/c/0169",
+              "subcategories": []
+            },
+            {
+              "id": "01236",
+              "name": "Alex's Picks",
+              "url": "/Alex-s-Picks/c/01236",
+              "subcategories": []
+            },
+            {
+              "id": "01913",
+              "name": "The Beach Bum",
+              "url": "/The-Beach-Bum/c/01913",
+              "subcategories": []
+            },
+            {
+              "id": "0507",
+              "name": "Golf Accessories ",
+              "url": "/Golf-Accessories-/c/0507",
+              "subcategories": []
+            },
+            {
+              "id": "01223",
+              "name": "Life Of The Party",
+              "url": "/Life-Of-The-Party/c/01223",
+              "subcategories": []
+            },
+            {
+              "id": "0447",
+              "name": "Shorts",
+              "url": "/Shorts/c/0447",
+              "subcategories": []
+            },
+            {
+              "id": "032",
+              "name": "Summer Packages",
+              "url": "/Summer-Packages/c/032",
+              "subcategories": [
+                {
+                  "id": "0323",
+                  "name": "Shirt & Short $150",
+                  "url": "/Summer-Packages/Shirt-Short-150/c/0323",
+                  "subcategories": []
+                },
+                {
+                  "id": "0322",
+                  "name": "Polo & Hat $100",
+                  "url": "/Summer-Packages/Polo-Hat-100/c/0322",
+                  "subcategories": []
+                },
+                {
+                  "id": "0321",
+                  "name": "Graphic Tee & Hat $50",
+                  "url": "/Summer-Packages/Graphic-Tee-Hat-50/c/0321",
+                  "subcategories": []
+                }
+              ]
+            },
+            {
+              "id": "055",
+              "name": "Active",
+              "url": "/Active/c/055",
+              "subcategories": []
+            },
+            {
+              "id": "01915",
+              "name": "Weekend Getaways",
+              "url": "/Weekend-Getaways/c/01915",
+              "subcategories": []
+            },
+            {
+              "id": "01230",
+              "name": "Matt Ryan's Picks",
+              "url": "/Matt-Ryan-s-Picks/c/01230",
+              "subcategories": []
+            },
+            {
+              "id": "01229",
+              "name": "Jimmy G's Picks",
+              "url": "/Jimmy-G-s-Picks/c/01229",
+              "subcategories": []
+            },
+            {
+              "id": "0551",
+              "name": "Active Tops",
+              "url": "/Active-Tops/c/0551",
+              "subcategories": []
+            },
+            {
+              "id": "0505",
+              "name": "Filter by Golf Accessories",
+              "url": "/Filter-by-Golf-Accessories/c/0505",
+              "subcategories": []
+            },
+            {
+              "id": "01918",
+              "name": "Golf Together",
+              "url": "/Golf-Together/c/01918",
+              "subcategories": []
+            },
+            {
+              "id": "0148",
+              "name": "Joggers & Lounge Pants",
+              "url": "/Joggers-Lounge-Pants/c/0148",
+              "subcategories": []
+            },
+            {
+              "id": "01227",
+              "name": "Eco Collection",
+              "url": "/Eco-Collection/c/01227",
+              "subcategories": []
+            },
+            {
+              "id": "01222",
+              "name": "Jon Rahm's Picks",
+              "url": "/Jon-Rahm-s-Picks/c/01222",
+              "subcategories": []
+            },
+            {
+              "id": "GiftCards2",
+              "name": "Gift Cards",
+              "url": "/Gift-Cards/c/GiftCards2",
+              "subcategories": []
+            },
+            {
+              "id": "0552",
+              "name": "Active Shorts",
+              "url": "/Active-Shorts/c/0552",
+              "subcategories": []
+            },
+            {
+              "id": "01239",
+              "name": "Sam Burns' Picks",
+              "url": "/Sam-Burns-Picks/c/01239",
+              "subcategories": []
+            },
+            {
+              "id": "019",
+              "name": "GIFTS FOR HIM",
+              "url": "/GIFTS-FOR-HIM/c/019",
+              "subcategories": []
+            },
+            {
+              "id": "0211",
+              "name": "New Arrivals",
+              "url": "/New-Arrivals/c/0211",
+              "subcategories": []
+            },
+            {
+              "id": "0450",
+              "name": "Hoodies & Pullovers",
+              "url": "/Hoodies-Pullovers/c/0450",
+              "subcategories": []
+            },
+            {
+              "id": "0243",
+              "name": "Boxers",
+              "url": "/Boxers/c/0243",
+              "subcategories": []
+            },
+            {
+              "id": "0276",
+              "name": "Sweetspot",
+              "url": "/Sweetspot/c/0276",
+              "subcategories": []
+            },
+            {
+              "id": "02",
+              "name": "Cuater",
+              "url": "/Cuater/c/02",
+              "subcategories": [
+                {
+                  "id": "022",
+                  "name": "Golf Shoes",
+                  "url": "/Cuater/Golf-Shoes/c/022",
+                  "subcategories": [
+                    {
+                      "id": "0221",
+                      "name": "Spiked",
+                      "url": "/Cuater/Golf-Shoes/Spiked/c/0221",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0222",
+                      "name": "Spikeless",
+                      "url": "/Cuater/Golf-Shoes/Spikeless/c/0222",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0223",
+                      "name": "Shop All",
+                      "url": "/Cuater/Golf-Shoes/Shop-All/c/0223",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "021",
+                  "name": "New",
+                  "url": "/Cuater/New/c/021",
+                  "subcategories": [
+                    {
+                      "id": "0212",
+                      "name": "Best Sellers",
+                      "url": "/Cuater/New/Best-Sellers/c/0212",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0271",
+                      "name": "The Perfect Shoe",
+                      "url": "/Cuater/New/The-Perfect-Shoe/c/0271",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "023",
+                  "name": "HATS",
+                  "url": "/Cuater/HATS/c/023",
+                  "subcategories": [
+                    {
+                      "id": "0231",
+                      "name": "Snapback Hats",
+                      "url": "/Cuater/HATS/Snapback-Hats/c/0231",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0232",
+                      "name": "Fitted Hats",
+                      "url": "/Cuater/HATS/Fitted-Hats/c/0232",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0233",
+                      "name": "Other Hats",
+                      "url": "/Cuater/HATS/Other-Hats/c/0233",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0234",
+                      "name": "Shop All",
+                      "url": "/Cuater/HATS/Shop-All/c/0234",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "024",
+                  "name": "Accessories",
+                  "url": "/Cuater/Accessories/c/024",
+                  "subcategories": [
+                    {
+                      "id": "0244",
+                      "name": "Golf Gloves",
+                      "url": "/Cuater/Accessories/Golf-Gloves/c/0244",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0245",
+                      "name": "Golf Towels",
+                      "url": "/Cuater/Accessories/Golf-Towels/c/0245",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0248",
+                      "name": "Headcovers",
+                      "url": "/Cuater/Accessories/Headcovers/c/0248",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0242",
+                      "name": "Socks",
+                      "url": "/Cuater/Accessories/Socks/c/0242",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0247",
+                      "name": "Shop All",
+                      "url": "/Cuater/Accessories/Shop-All/c/0247",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "025",
+                  "name": "Best Sellers",
+                  "url": "/Cuater/Best-Sellers/c/025",
+                  "subcategories": [
+                    {
+                      "id": "0251",
+                      "name": "Best Sellers",
+                      "url": "/Cuater/Best-Sellers/Best-Sellers/c/0251",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "026",
+                  "name": "Casual Shoes",
+                  "url": "/Cuater/Casual-Shoes/c/026",
+                  "subcategories": [
+                    {
+                      "id": "0261",
+                      "name": "Lace Up",
+                      "url": "/Cuater/Casual-Shoes/Lace-Up/c/0261",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0262",
+                      "name": "Slip On",
+                      "url": "/Cuater/Casual-Shoes/Slip-On/c/0262",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0263",
+                      "name": "Sandals",
+                      "url": "/Cuater/Casual-Shoes/Sandals/c/0263",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0264",
+                      "name": "Shop All",
+                      "url": "/Cuater/Casual-Shoes/Shop-All/c/0264",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "027",
+                  "name": "Collections",
+                  "url": "/Cuater/Collections/c/027",
+                  "subcategories": [
+                    {
+                      "id": "0271",
+                      "name": "The Perfect Shoe",
+                      "url": "/Cuater/New/The-Perfect-Shoe/c/0271",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "0241",
+                  "name": "Belts",
+                  "url": "/Cuater/Belts/c/0241",
+                  "subcategories": [
+                    {
+                      "id": "02411",
+                      "name": "Stretch Belts",
+                      "url": "/Cuater/Belts/Stretch-Belts/c/02411",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "02412",
+                      "name": "Leather Belts",
+                      "url": "/Cuater/Belts/Leather-Belts/c/02412",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "02413",
+                      "name": "Hybrid Stretch Belts",
+                      "url": "/Cuater/Belts/Hybrid-Stretch-Belts/c/02413",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "01201",
+                  "name": "Gift Guide",
+                  "url": "/Cuater/Gift-Guide/c/01201",
+                  "subcategories": []
+                }
+              ]
+            },
+            {
+              "id": "01",
+              "name": "TM",
+              "url": "/TM/c/01",
+              "subcategories": [
+                {
+                  "id": "012",
+                  "name": "COLLECTIONS ",
+                  "url": "/TM/COLLECTIONS-/c/012",
+                  "subcategories": [
+                    {
+                      "id": "0654",
+                      "name": "Canada Collection",
+                      "url": "/TM/COLLECTIONS-/Canada-Collection/c/0654",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "01234",
+                      "name": "Holidazed & Confused",
+                      "url": "/TM/COLLECTIONS-/Holidazed-Confused/c/01234",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "01243",
+                      "name": "Cloud Tee",
+                      "url": "/TM/COLLECTIONS-/Cloud-Tee/c/01243",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "01242",
+                      "name": "Cloud Waffle",
+                      "url": "/TM/COLLECTIONS-/Cloud-Waffle/c/01242",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "01240",
+                      "name": "Cloud Light",
+                      "url": "/TM/COLLECTIONS-/Cloud-Light/c/01240",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0124",
+                      "name": "Cloud Collection",
+                      "url": "/TM/COLLECTIONS-/Cloud-Collection/c/0124",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0126",
+                      "name": "Heater Golf",
+                      "url": "/TM/COLLECTIONS-/Heater-Golf/c/0126",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "01235",
+                      "name": "Heater Active",
+                      "url": "/TM/COLLECTIONS-/Heater-Active/c/01235",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "018",
+                      "name": "Destinations",
+                      "url": "/TM/COLLECTIONS-/Destinations/c/018",
+                      "subcategories": [
+                        {
+                          "id": "0186",
+                          "name": "Arizona",
+                          "url": "/TM/COLLECTIONS-/Destinations/Arizona/c/0186",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0182",
+                          "name": "Boston",
+                          "url": "/TM/COLLECTIONS-/Destinations/Boston/c/0182",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0181",
+                          "name": "California",
+                          "url": "/TM/COLLECTIONS-/Destinations/California/c/0181",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0187",
+                          "name": "Chicago",
+                          "url": "/TM/COLLECTIONS-/Destinations/Chicago/c/0187",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0189",
+                          "name": "Colorado",
+                          "url": "/TM/COLLECTIONS-/Destinations/Colorado/c/0189",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "01811",
+                          "name": "Florida",
+                          "url": "/TM/COLLECTIONS-/Destinations/Florida/c/01811",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "01810",
+                          "name": "Hawaii",
+                          "url": "/TM/COLLECTIONS-/Destinations/Hawaii/c/01810",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0183",
+                          "name": "Las Vegas",
+                          "url": "/TM/COLLECTIONS-/Destinations/Las-Vegas/c/0183",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "01812",
+                          "name": "Michigan",
+                          "url": "/TM/COLLECTIONS-/Destinations/Michigan/c/01812",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "01813",
+                          "name": "Minnesota",
+                          "url": "/TM/COLLECTIONS-/Destinations/Minnesota/c/01813",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "01815",
+                          "name": "Ohio",
+                          "url": "/TM/COLLECTIONS-/Destinations/Ohio/c/01815",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0188",
+                          "name": "Texas",
+                          "url": "/TM/COLLECTIONS-/Destinations/Texas/c/0188",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0185",
+                          "name": "Utah",
+                          "url": "/TM/COLLECTIONS-/Destinations/Utah/c/0185",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "01814",
+                          "name": "Wisconsin",
+                          "url": "/TM/COLLECTIONS-/Destinations/Wisconsin/c/01814",
+                          "subcategories": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "01289",
+                      "name": "Surf City Still Works",
+                      "url": "/TM/COLLECTIONS-/Surf-City-Still-Works/c/01289",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0128",
+                      "name": "The Youth Collection",
+                      "url": "/TM/COLLECTIONS-/The-Youth-Collection/c/0128",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "013",
+                  "name": "TOPS",
+                  "url": "/TM/TOPS/c/013",
+                  "subcategories": [
+                    {
+                      "id": "0131",
+                      "name": "Polos",
+                      "url": "/TM/TOPS/Polos/c/0131",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0132",
+                      "name": "Tees",
+                      "url": "/TM/TOPS/Tees/c/0132",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0133",
+                      "name": "Button-Ups",
+                      "url": "/TM/TOPS/Button-Ups/c/0133",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0139",
+                      "name": "Quarter Zips",
+                      "url": "/TM/TOPS/Quarter-Zips/c/0139",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0134",
+                      "name": "Outerwear",
+                      "url": "/TM/TOPS/Outerwear/c/0134",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0136",
+                      "name": "Youth Tops",
+                      "url": "/TM/TOPS/Youth-Tops/c/0136",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0135",
+                      "name": "Shop All",
+                      "url": "/TM/TOPS/Shop-All/c/0135",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "014",
+                  "name": "BOTTOMS",
+                  "url": "/TM/BOTTOMS/c/014",
+                  "subcategories": [
+                    {
+                      "id": "0141",
+                      "name": "Shorts",
+                      "url": "/TM/BOTTOMS/Shorts/c/0141",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0144",
+                      "name": "Boardshorts",
+                      "url": "/TM/BOTTOMS/Boardshorts/c/0144",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0142",
+                      "name": "Pants",
+                      "url": "/TM/BOTTOMS/Pants/c/0142",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0129",
+                      "name": "Jeans",
+                      "url": "/TM/BOTTOMS/Jeans/c/0129",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0145",
+                      "name": "Youth Bottoms",
+                      "url": "/TM/BOTTOMS/Youth-Bottoms/c/0145",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0143",
+                      "name": "Shop All",
+                      "url": "/TM/BOTTOMS/Shop-All/c/0143",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "011",
+                  "name": "FEATURED",
+                  "url": "/TM/FEATURED/c/011",
+                  "subcategories": [
+                    {
+                      "id": "0111",
+                      "name": "New Arrivals",
+                      "url": "/TM/FEATURED/New-Arrivals/c/0111",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0112",
+                      "name": "Best Sellers",
+                      "url": "/TM/FEATURED/Best-Sellers/c/0112",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "01238",
+                      "name": "The Perfect Series",
+                      "url": "/TM/FEATURED/The-Perfect-Series/c/01238",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0124",
+                      "name": "Cloud Collection",
+                      "url": "/TM/COLLECTIONS-/Cloud-Collection/c/0124",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "015",
+                  "name": "HATS",
+                  "url": "/TM/HATS/c/015",
+                  "subcategories": [
+                    {
+                      "id": "0151",
+                      "name": "Snapback Hats",
+                      "url": "/TM/HATS/Snapback-Hats/c/0151",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0152",
+                      "name": "Fitted Hats",
+                      "url": "/TM/HATS/Fitted-Hats/c/0152",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0153",
+                      "name": "Destination Hats",
+                      "url": "/TM/HATS/Destination-Hats/c/0153",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0155",
+                      "name": "Beanies",
+                      "url": "/TM/HATS/Beanies/c/0155",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0157",
+                      "name": "Youth Hats",
+                      "url": "/TM/HATS/Youth-Hats/c/0157",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0156",
+                      "name": "Shop All",
+                      "url": "/TM/HATS/Shop-All/c/0156",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "017",
+                  "name": "DISCOVER",
+                  "url": "/TM/DISCOVER/c/017",
+                  "subcategories": [
+                    {
+                      "id": "0177",
+                      "name": "Retail",
+                      "url": "/TM/DISCOVER/Retail/c/0177",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0171",
+                      "name": "Brand",
+                      "url": "/TM/DISCOVER/Brand/c/0171",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0172",
+                      "name": "Life On Tour",
+                      "url": "/TM/DISCOVER/Life-On-Tour/c/0172",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0173",
+                      "name": "Stories",
+                      "url": "/TM/DISCOVER/Stories/c/0173",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0174",
+                      "name": "Lookbook",
+                      "url": "/TM/DISCOVER/Lookbook/c/0174",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0176",
+                      "name": "TM Rewards",
+                      "url": "/TM/DISCOVER/TM-Rewards/c/0176",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0175",
+                      "name": "Ambassadors",
+                      "url": "/TM/DISCOVER/Ambassadors/c/0175",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "031",
+                  "name": "Sale",
+                  "url": "/TM/Sale/c/031",
+                  "subcategories": [
+                    {
+                      "id": "0312",
+                      "name": "25% Off Tops",
+                      "url": "/TM/Sale/25-Off-Tops/c/0312",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0313",
+                      "name": "25% Off Bottoms",
+                      "url": "/TM/Sale/25-Off-Bottoms/c/0313",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0314",
+                      "name": "25% Off Hats",
+                      "url": "/TM/Sale/25-Off-Hats/c/0314",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0319",
+                      "name": "25% Off Footwear",
+                      "url": "/TM/Sale/25-Off-Footwear/c/0319",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0316",
+                      "name": "25% Off Accessories",
+                      "url": "/TM/Sale/25-Off-Accessories/c/0316",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "034",
+                  "name": "Flash Sale",
+                  "url": "/TM/Flash-Sale/c/034",
+                  "subcategories": [
+                    {
+                      "id": "0341",
+                      "name": "60% Off Doorbusters",
+                      "url": "/TM/Flash-Sale/60-Off-Doorbusters/c/0341",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0342",
+                      "name": "50% Off Tops",
+                      "url": "/TM/Flash-Sale/50-Off-Tops/c/0342",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0343",
+                      "name": "50% Off Bottoms",
+                      "url": "/TM/Flash-Sale/50-Off-Bottoms/c/0343",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0344",
+                      "name": "50% Off Hats",
+                      "url": "/TM/Flash-Sale/50-Off-Hats/c/0344",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0345",
+                      "name": "50% Off Accessories",
+                      "url": "/TM/Flash-Sale/50-Off-Accessories/c/0345",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0346",
+                      "name": "Shop All Sale",
+                      "url": "/TM/Flash-Sale/Shop-All-Sale/c/0346",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "040",
+                  "name": "Tournament Looks",
+                  "url": "/TM/Tournament-Looks/c/040",
+                  "subcategories": [
+                    {
+                      "id": "0401",
+                      "name": "Thursday",
+                      "url": "/TM/Tournament-Looks/Thursday/c/0401",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0402",
+                      "name": "Friday",
+                      "url": "/TM/Tournament-Looks/Friday/c/0402",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0403",
+                      "name": "Saturday",
+                      "url": "/TM/Tournament-Looks/Saturday/c/0403",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0404",
+                      "name": "Sunday",
+                      "url": "/TM/Tournament-Looks/Sunday/c/0404",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0405",
+                      "name": "Shop All",
+                      "url": "/TM/Tournament-Looks/Shop-All/c/0405",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "042",
+                  "name": "BACK TO SCHOOL",
+                  "url": "/TM/BACK-TO-SCHOOL/c/042",
+                  "subcategories": []
+                },
+                {
+                  "id": "0361",
+                  "name": "Preferred",
+                  "url": "/TM/Preferred/c/0361",
+                  "subcategories": []
+                },
+                {
+                  "id": "0362",
+                  "name": "Executive",
+                  "url": "/TM/Executive/c/0362",
+                  "subcategories": []
+                },
+                {
+                  "id": "0363",
+                  "name": "VIP",
+                  "url": "/TM/VIP/c/0363",
+                  "subcategories": []
+                },
+                {
+                  "id": "0501",
+                  "name": "Golf",
+                  "url": "/TM/Golf/c/0501",
+                  "subcategories": [
+                    {
+                      "id": "0126",
+                      "name": "Heater Golf",
+                      "url": "/TM/COLLECTIONS-/Heater-Golf/c/0126",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "022",
+                      "name": "Golf Shoes",
+                      "url": "/Cuater/Golf-Shoes/c/022",
+                      "subcategories": [
+                        {
+                          "id": "0221",
+                          "name": "Spiked",
+                          "url": "/Cuater/Golf-Shoes/Spiked/c/0221",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0222",
+                          "name": "Spikeless",
+                          "url": "/Cuater/Golf-Shoes/Spikeless/c/0222",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0223",
+                          "name": "Shop All",
+                          "url": "/Cuater/Golf-Shoes/Shop-All/c/0223",
+                          "subcategories": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0244",
+                      "name": "Golf Gloves",
+                      "url": "/Cuater/Accessories/Golf-Gloves/c/0244",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "024",
+                      "name": "Accessories",
+                      "url": "/Cuater/Accessories/c/024",
+                      "subcategories": [
+                        {
+                          "id": "0244",
+                          "name": "Golf Gloves",
+                          "url": "/Cuater/Accessories/Golf-Gloves/c/0244",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0245",
+                          "name": "Golf Towels",
+                          "url": "/Cuater/Accessories/Golf-Towels/c/0245",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0248",
+                          "name": "Headcovers",
+                          "url": "/Cuater/Accessories/Headcovers/c/0248",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0242",
+                          "name": "Socks",
+                          "url": "/Cuater/Accessories/Socks/c/0242",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0247",
+                          "name": "Shop All",
+                          "url": "/Cuater/Accessories/Shop-All/c/0247",
+                          "subcategories": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "044",
+                  "name": "Women",
+                  "url": "/TM/Women/c/044",
+                  "subcategories": [
+                    {
+                      "id": "0412",
+                      "name": "New Arrivals",
+                      "url": "/TM/Women/New-Arrivals/c/0412",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0441",
+                      "name": "Tops",
+                      "url": "/TM/Women/Tops/c/0441",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0442",
+                      "name": "Bottoms",
+                      "url": "/TM/Women/Bottoms/c/0442",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0414",
+                      "name": "The Cloud Collection",
+                      "url": "/TM/Women/The-Cloud-Collection/c/0414",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0444",
+                      "name": "Shop All",
+                      "url": "/TM/Women/Shop-All/c/0444",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "039",
+                  "name": "Fathers Day Packages",
+                  "url": "/TM/Fathers-Day-Packages/c/039",
+                  "subcategories": [
+                    {
+                      "id": "0391",
+                      "name": "Polo, Short & Hat $175",
+                      "url": "/TM/Fathers-Day-Packages/Polo-Short-Hat-175/c/0391",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0192",
+                      "name": "Polo & Short $150",
+                      "url": "/TM/Fathers-Day-Packages/Polo-Short-150/c/0192",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0191",
+                      "name": "Polo & Hat $100",
+                      "url": "/TM/Fathers-Day-Packages/Polo-Hat-100/c/0191",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "01245",
+                  "name": "Cloud Denim",
+                  "url": "/TM/Cloud-Denim/c/01245",
+                  "subcategories": []
+                },
+                {
+                  "id": "0170",
+                  "name": "Accessories",
+                  "url": "/TM/Accessories/c/0170",
+                  "subcategories": []
+                },
+                {
+                  "id": "0120",
+                  "name": "Gift Guide",
+                  "url": "/TM/Gift-Guide/c/0120",
+                  "subcategories": [
+                    {
+                      "id": "0196",
+                      "name": "Gifts Under $200",
+                      "url": "/TM/Gift-Guide/Gifts-Under-200/c/0196",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0195",
+                      "name": "Gifts Under $100",
+                      "url": "/TM/Gift-Guide/Gifts-Under-100/c/0195",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0194",
+                      "name": "Gifts Under $50",
+                      "url": "/TM/Gift-Guide/Gifts-Under-50/c/0194",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0197",
+                      "name": "The Golfer",
+                      "url": "/TM/Gift-Guide/The-Golfer/c/0197",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0199",
+                      "name": "The Night Owl",
+                      "url": "/TM/Gift-Guide/The-Night-Owl/c/0199",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "0198",
+                      "name": "The Lounger",
+                      "url": "/TM/Gift-Guide/The-Lounger/c/0198",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "01914",
+                      "name": "The Athlete",
+                      "url": "/TM/Gift-Guide/The-Athlete/c/01914",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "01919",
+                      "name": "For Youth",
+                      "url": "/TM/Gift-Guide/For-Youth/c/01919",
+                      "subcategories": []
+                    }
+                  ]
+                },
+                {
+                  "id": "0508",
+                  "name": "Workout",
+                  "url": "/Shop-by-Activity-/Workout/c/0508",
+                  "subcategories": []
+                },
+                {
+                  "id": "0509",
+                  "name": "Travel",
+                  "url": "/TM/Travel/c/0509",
+                  "subcategories": []
+                }
+              ]
+            },
+            {
+              "id": "0180",
+              "name": "New Shorts",
+              "url": "/New-Shorts/c/0180",
+              "subcategories": []
+            },
+            {
+              "id": "01224",
+              "name": "The Perfect Pant",
+              "url": "/The-Perfect-Pant/c/01224",
+              "subcategories": []
+            },
+            {
+              "id": "0358",
+              "name": "50% Off Polos",
+              "url": "/50-Off-Polos/c/0358",
+              "subcategories": []
+            },
+            {
+              "id": "0755",
+              "name": "TM x St Andrews Links Collection",
+              "url": "/TM-x-St-Andrews-Links-Collection/c/0755",
+              "subcategories": []
+            },
+            {
+              "id": "0545",
+              "name": "Shop by Activity ",
+              "url": "/Shop-by-Activity-/c/0545",
+              "subcategories": [
+                {
+                  "id": "0501",
+                  "name": "Golf",
+                  "url": "/TM/Golf/c/0501",
+                  "subcategories": [
+                    {
+                      "id": "0126",
+                      "name": "Heater Golf",
+                      "url": "/TM/COLLECTIONS-/Heater-Golf/c/0126",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "022",
+                      "name": "Golf Shoes",
+                      "url": "/Cuater/Golf-Shoes/c/022",
+                      "subcategories": [
+                        {
+                          "id": "0221",
+                          "name": "Spiked",
+                          "url": "/Cuater/Golf-Shoes/Spiked/c/0221",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0222",
+                          "name": "Spikeless",
+                          "url": "/Cuater/Golf-Shoes/Spikeless/c/0222",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0223",
+                          "name": "Shop All",
+                          "url": "/Cuater/Golf-Shoes/Shop-All/c/0223",
+                          "subcategories": []
+                        }
+                      ]
+                    },
+                    {
+                      "id": "0244",
+                      "name": "Golf Gloves",
+                      "url": "/Cuater/Accessories/Golf-Gloves/c/0244",
+                      "subcategories": []
+                    },
+                    {
+                      "id": "024",
+                      "name": "Accessories",
+                      "url": "/Cuater/Accessories/c/024",
+                      "subcategories": [
+                        {
+                          "id": "0244",
+                          "name": "Golf Gloves",
+                          "url": "/Cuater/Accessories/Golf-Gloves/c/0244",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0245",
+                          "name": "Golf Towels",
+                          "url": "/Cuater/Accessories/Golf-Towels/c/0245",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0248",
+                          "name": "Headcovers",
+                          "url": "/Cuater/Accessories/Headcovers/c/0248",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0242",
+                          "name": "Socks",
+                          "url": "/Cuater/Accessories/Socks/c/0242",
+                          "subcategories": []
+                        },
+                        {
+                          "id": "0247",
+                          "name": "Shop All",
+                          "url": "/Cuater/Accessories/Shop-All/c/0247",
+                          "subcategories": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "0508",
+                  "name": "Workout",
+                  "url": "/Shop-by-Activity-/Workout/c/0508",
+                  "subcategories": []
+                },
+                {
+                  "id": "0509",
+                  "name": "Travel",
+                  "url": "/TM/Travel/c/0509",
+                  "subcategories": []
+                }
+              ]
+            },
+            {
+              "id": "0240",
+              "name": "Basic Accessories",
+              "url": "/Basic-Accessories/c/0240",
+              "subcategories": []
+            },
+            {
+              "id": "01331",
+              "name": "Polos",
+              "url": "/Polos/c/01331",
+              "subcategories": []
+            },
+            {
+              "id": "0320",
+              "name": "Sale Polos",
+              "url": "/Sale-Polos/c/0320",
+              "subcategories": []
+            },
+            {
+              "id": "0369",
+              "name": "Sale Other Hats",
+              "url": "/Sale-Other-Hats/c/0369",
+              "subcategories": []
+            },
+            {
+              "id": "0368",
+              "name": "Sale Fitted Hats",
+              "url": "/Sale-Fitted-Hats/c/0368",
+              "subcategories": []
+            },
+            {
+              "id": "0203",
+              "name": "New Outerwear",
+              "url": "/New-Outerwear/c/0203",
+              "subcategories": []
+            },
+            {
+              "id": "01231",
+              "name": "TopGolf Exclusive",
+              "url": "/TopGolf-Exclusive/c/01231",
+              "subcategories": []
+            },
+            {
+              "id": "0315",
+              "name": "Shop All Sale",
+              "url": "/Shop-All-Sale/c/0315",
+              "subcategories": []
+            },
+            {
+              "id": "0364",
+              "name": "Sale Snapback Hats",
+              "url": "/Sale-Snapback-Hats/c/0364",
+              "subcategories": []
+            },
+            {
+              "id": "0357",
+              "name": "Sale Golf Accessories",
+              "url": "/Sale-Golf-Accessories/c/0357",
+              "subcategories": []
+            },
+            {
+              "id": "0448",
+              "name": "Pants",
+              "url": "/Pants/c/0448",
+              "subcategories": []
+            },
+            {
+              "id": "0349",
+              "name": "Sale Socks",
+              "url": "/Sale-Socks/c/0349",
+              "subcategories": []
+            },
+            {
+              "id": "0348",
+              "name": "Sale Belts",
+              "url": "/Sale-Belts/c/0348",
+              "subcategories": []
+            },
+            {
+              "id": "0340",
+              "name": "Sale Gloves",
+              "url": "/Sale-Gloves/c/0340",
+              "subcategories": []
+            },
+            {
+              "id": "0330",
+              "name": "Sale Youth Bottoms",
+              "url": "/Sale-Youth-Bottoms/c/0330",
+              "subcategories": []
+            },
+            {
+              "id": "0329",
+              "name": "Sale Boardshorts",
+              "url": "/Sale-Boardshorts/c/0329",
+              "subcategories": []
+            },
+            {
+              "id": "0328",
+              "name": "Sale Shorts",
+              "url": "/Sale-Shorts/c/0328",
+              "subcategories": []
+            },
+            {
+              "id": "0327",
+              "name": "Sale Youth Tops",
+              "url": "/Sale-Youth-Tops/c/0327",
+              "subcategories": []
+            },
+            {
+              "id": "002",
+              "name": "MENS",
+              "url": "/MENS/c/002",
+              "subcategories": []
+            },
+            {
+              "id": "0115",
+              "name": "Shop All Men",
+              "url": "/Shop-All-Men/c/0115",
+              "subcategories": []
+            },
+            {
+              "id": "001",
+              "name": "Mens",
+              "url": "/Mens/c/001",
+              "subcategories": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

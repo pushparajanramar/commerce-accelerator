@@ -1,0 +1,186 @@
+.plp-filter-container {
+  .filter-result-overlay {
+    background-color: var(--tm_neutral_0);
+    border: em(1) solid var(--tm_neutral_300);
+    position: fixed;
+    height: 100vh;
+    z-index: 4;
+    color: var(--tm_neutral_800);
+    left:0;
+    overflow-y: auto;
+    max-width:em(375);
+    width: 100%;
+    top: 0;
+    @media screen and (min-width: ($bp-tablet+1px)) {
+      max-width:em(643);
+      left:0;
+    }
+    .w1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: em(133);
+      padding: 0 em(18);
+      .tm-close {
+        height: em(24);
+        width: em(24);
+      }
+      @media screen and (min-width: ($bp-tablet+1px)) {
+        padding:em(68) em(58) em(26);
+      }
+    }
+    .w2 {
+      padding: 0 em(18);
+      gap: em(28);
+      display: flex;
+      flex-direction: column;
+      .filter-section {
+        display: flex;
+        flex-direction: column;
+        gap: em(24);
+
+        .accordion-item {
+          display: flex;
+          justify-content: space-between;
+          h4 {
+            text-transform: capitalize;            
+            color: var(--tm_neutral_900);
+            width: 100%;
+            &::after {
+              width: 1.25em;
+              height: 1.25em;
+            }
+            @media (min-width: ($bp-tablet+1px)) {
+              width: 73.28%;
+            }
+          }
+          .filter-btn {
+            width: 1.25em;
+            height: 1.25em;
+            background-repeat: no-repeat;
+            &.active {
+              background-image: var(--tm-minus-black);
+              background-position: center right;
+            }
+            background-image: var(--tm-plus-black);
+          }          
+        }
+        .category-options{
+          li{
+            margin-bottom: em(12);
+            a{
+              &:hover{
+                text-decoration: underline;
+              }
+            }
+          }
+        }        
+
+        .block {
+          .color-check-box {
+            display: flex;
+            gap: em(24);
+            flex-wrap: wrap;
+            .items-list {
+              height: em(24);
+              width: em(24);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              border-width: em(1);
+              &:hover {
+                border: em(2) solid var(--tm_neutral_700);
+              }
+            }
+            .color-checkbox {
+              width: em(16);
+              height: em(16);
+              cursor: pointer;
+              border-radius: 50%;
+            }
+          }
+          .category {
+            padding-top: em(24);
+            margin: 0;
+            &:first-child {
+              padding-top: 0;
+            }
+            .form-list {
+              display: flex;
+              align-items: center;
+              text-transform: capitalize;
+              gap: em(16);
+              input[type="checkbox"] {
+                height: em(24);
+                width: em(24);
+                &:checked{
+                  accent-color: var(--tm_neutral_700);
+                }
+              }
+              label {
+                cursor: pointer;
+                line-height: em(20);
+                padding: em(3.72) 0;
+              }
+            }
+          }
+        }
+      }
+      hr {
+        height: em(1);
+        background: var(--tm_neutral_300);
+      }
+      @media screen and (min-width: ($bp-tablet+1px)) {
+        padding: em(33) em(58);
+      }
+    }
+    .w3 {
+      display: flex;
+      height: em(74);
+      position: sticky;
+      bottom: 0;
+      align-items: center;
+      background: var(--tm_neutral_200);
+      flex-shrink: 0;
+      justify-content: space-between;
+      padding: 0 em(23);
+      @media screen and (min-width: ($bp-tablet+1px)) {
+        padding: em(14) em(46);
+      }
+    }
+    .w3 a:nth-child(2) {
+      width: 54.34%;
+      text-align: center;
+      @media screen and (max-width:$bp-mobile) {
+        width: 58.34%;
+      }
+    }
+    
+  }
+  .filter-overlay-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--tm_neutral_900);
+    opacity: 0.5;
+    z-index: 3;
+  }
+  .plp-filter-section {
+    @media (max-width: ($bp-mobile+1px)) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: ($bp-mobile+1px)) {
+    .filter-result-overlay {
+      width: 90.58%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}
+

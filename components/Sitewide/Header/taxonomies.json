@@ -1,0 +1,146 @@
+{
+  "new-arrivals": {    
+    "id":"0111",
+    "men":{
+      "hats": {
+        "id": "0200",
+        "name": "New Hats"
+      },
+      "new-polos": {
+        "id": "0179",
+        "name": "New Polos"
+      },
+      "new-shorts": {
+        "id": "0180",
+        "name": "New Shorts"
+      },
+      "new-tees": {
+        "id": "0201",
+        "name": "New Tees"
+      }
+    },
+    "women":{
+      "new-arrivals":{
+        "id": "0412",
+        "name": "New Arrivals"
+      },
+      "best-sellers":{
+        "id": "0413",
+        "name": "Best Sellers"
+      },      
+      "the-cloud-collection":{
+        "id": "0414",
+        "name": "The Cloud Collection"
+      },
+      "tops":{
+        "id": "0441",
+        "name": "Tops"
+      },
+      "bottoms":{
+        "id": "0442",
+        "name": "Bottoms"
+      },   
+      "dresses":{
+        "id": "0425",
+        "name": "Dresses"
+      },
+      "accessories":{
+        "id": "0460",
+        "name": "Accessories"
+      },
+      "shop-all":{
+        "id": "0444",
+        "name": "Shop All"
+      },
+      "tees": {
+        "id": "0446",
+        "name": "Tees"
+      },
+      "shirts-and-tops": {
+        "id": "0451",
+        "name": "Shirts and Tops"
+      },
+      "hoodies-and-pullovers": {
+        "id": "0450",
+        "name": "Hoodies and Pullovers"
+      },
+      "jackets": {
+        "id": "0449",
+        "name": "Jackets"
+      },
+      "polos": {
+        "id": "0445",
+        "name": "Polos"
+      },
+      "shorts": {
+        "id": "0447",
+        "name": "Shorts"
+      },
+      "pants": {
+        "id": "0448",
+        "name": "Pants"
+      }                                                 
+    }
+
+  },  
+  "women": {
+    "id":"044",
+    "tops":{
+      "tees": {
+        "id": "0446",
+        "name": "Tees"
+      },
+      "shirts-and-tops": {
+        "id": "0451",
+        "name": "Shirts and Tops"
+      },
+      "polos": {
+        "id": "0445",
+        "name": "Polos"
+      }
+    },
+    "bottoms":{
+      "pants": {
+        "id": "0448",
+        "name": "Pants"
+      }
+    }
+  },
+  "men": {
+    "id":"001",
+    "tops":{
+      "tees": {
+        "id": "0132",
+        "name": "Tees"
+      },
+      "polos": {
+        "id": "0131",
+        "name": "Polos"
+      },
+      "button-ups": {
+        "id": "0133",
+        "name": "Button-Ups"
+      },      
+      "quarter-zips": {
+        "id": "0139",
+        "name": "Quarter Zips"
+      },
+      "hoodies-and-sweatshirts": {
+        "id": "0138",
+        "name": "Hoodies and Pullovers"
+      },
+      "outerwear": {
+        "id": "0134",
+        "name": "Outerwear"
+      },
+      "youth-tops": {
+        "id": "0136",
+        "name": "Youth Tops"
+      },
+      "shop-all": {
+        "id": "0135",
+        "name": "Shop All"
+      } 
+    }     
+  }
+}

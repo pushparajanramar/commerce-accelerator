@@ -1,0 +1,39 @@
+.image-and-text {
+  .w1 {
+    display: flex;
+    flex-direction: column-reverse;
+    @media (min-width: ($bp-tablet)) {
+      flex-direction: row;
+      align-items: center;
+      gap: em(145);
+    }
+
+    .w2 {
+      display: flex;
+      flex-direction: column;
+      gap: em(12);
+      margin-top: em(24);
+      ul {
+        margin-left: em(28);
+        list-style: disc;
+      }
+      @media (min-width: ($bp-tablet)) {
+        width: 50%;
+      }
+    }
+    .w3 {
+      img {
+        width: 100%;
+      }
+      @media (min-width: ($bp-tablet)) {
+        width: 50%;
+      }
+    }
+    &.right {
+      flex-direction: column-reverse;
+      @media (min-width: ($bp-tablet)) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

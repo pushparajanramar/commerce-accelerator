@@ -1,0 +1,96 @@
+$bp-mobile-wide: 767px;
+$bp-desktop-wide: 1920px;
+
+.portrait-card {
+  .w1 {
+    gap: em(24);
+    display: flex;
+    overflow: auto;
+    flex-wrap: var(--wrap-cards, wrap);
+    @media (min-width: ($bp-tablet+1px)) {
+      column-gap: em(30);
+      row-gap: em(40);
+      display: grid;
+      grid-template-columns: repeat(var(--column-count, 3), 1fr);
+    }
+
+    //Hiding scrollbars (it's not possible to hide them in Firefox)
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent; /* Makes it hidden by default */
+    }
+    -ms-overflow-style: none; /* Hide scrollbar */
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: var(--image-heights, auto);
+  }
+  .category {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: em(16);
+    box-shadow: var(--box-shadow, none);
+    background-color: var(--bg-color);
+    margin: 0 auto;
+    .w2 {
+      width: 100%;
+      &.nowrap {
+        width: 70vw;
+        @media (min-width: ($bp-mobile-wide)) {
+          width: 37.5vw;
+        }
+        @media (min-width: ($bp-tablet+1px)) {
+          width: 100%;
+        }
+      }
+    }
+    .w3 {
+      flex-grow: 1;
+      display: flex;
+      padding: em(16) em(24);
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      background-color: var(--tm_neutral_0);
+      .w4 {
+        gap: em(8);
+        display: flex;
+        color: var(--tm_neutral_800);
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: em(14);
+      }
+      .w5 {
+        //padding-bottom: 0.875em 0;
+        display: inline-flex;
+        gap: 3em;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+.portrait-card.wrap {
+  @media (max-width: $bp-tablet) {
+    .category {
+      width: 48%;
+      img{
+        height:em(450);
+      }
+    }
+  }
+  @media (max-width: $bp-mobile) {
+    .category {
+      width: 23.5em;     
+    }
+  }
+}
+
+.portrait-card.black_100 {
+  background: var(--tm_neutral_100);
+}

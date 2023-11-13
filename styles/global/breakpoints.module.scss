@@ -1,0 +1,12 @@
+// layout breakpoints
+$bp-mobile: 414px;
+$bp-tablet: 1024px;
+$bp-desktop: 1440px;
+
+// util breakpoints (special use), DON'T USE UNLESS IT'S APPROVED!
+
+:export {
+  bpMobile: $bp-mobile;
+  bpTablet: $bp-tablet;
+  bpDesktop: $bp-desktop;
+}

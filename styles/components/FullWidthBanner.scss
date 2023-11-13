@@ -1,0 +1,313 @@
+// Linear Interpolation Mixin
+@mixin linear-interpolation($property, $start, $end) {
+  #{$property}: $start;
+}
+
+.full-width-banner {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Create a 12-column grid */
+  gap: em(32); /* Add some gap between columns for better spacing */
+  min-height: em(612);
+  position: relative;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  /** Begin floating block **/
+  &.block-floating,
+  &.block-full-height,
+  &.block-overlay {
+    .w1 {
+      grid-column: span 3;
+      z-index: 1;
+      margin-right: -4em; /* Adjust this value to control the overlap */
+      grid-row-start: 1;
+      padding: em(24);
+      color: var(--text-color);
+      position: relative;
+      height: 80%;
+      margin-top: auto;
+      margin-bottom: auto;
+      @include linear-interpolation(width, 372px, 422px);
+      @media screen and (min-width: $bp-tablet) {
+        padding: em(32);
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--bg-color);
+        z-index: -1; /* Placed below the actual content */
+      }
+
+      h1 {
+        margin-bottom: em(12);
+      }
+      p {
+        margin-bottom: em(12);
+        @media screen and (min-width: $bp-tablet) {
+          margin-bottom: em(24);
+        }
+      }
+    }
+
+    .w2 {
+      grid-column: span 10;
+      grid-row-start: 1;
+      margin-left: -4em;
+    }
+
+    .w3 {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      &.left {
+        align-items: flex-start;
+        text-align: left;
+      }
+      &.right {
+        align-items: flex-end;
+        text-align: right;
+      }
+      &.center {
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    .w4 {
+      display: flex;
+      gap: em(40);
+    }
+    @media (min-width: ($bp-tablet)) {
+      &.center {
+        .w1 {
+          grid-column: 6 / span 2;
+        }
+        .w2 {
+          grid-column: 1 / span 12;
+          margin-left: 0;
+        }
+      }
+    }
+
+    &.right {
+      .w1 {
+        grid-column: 9 / span 5;
+      }
+      .w2 {
+        grid-column: 1 / span 12;
+        margin-left: 0;
+      }
+    }
+    @media screen and (max-width: ($bp-tablet - 1)) {
+      grid-template-columns: repeat(12, 1fr); /* Reset grid to 12 columns */
+      gap: 0;
+      .w1 {
+        grid-column: span 12; /* Span all 12 columns */
+        margin-right: 0; /* Remove margin to stack w1 below w2 */
+        grid-row: 2; /* Place w1 in the second row */
+        margin-top: -4em;
+        width: calc(100% - 2em);
+        margin-left: 1em;
+        min-height: em(192);
+        text-align: center;
+        height: auto;
+      }
+
+      .w2 {
+        grid-column: span 12; /* Span all 12 columns */
+        margin-left: 0;
+        grid-row: 1;
+        min-height: em(414);
+      }
+      .w4 {
+        justify-content: center;
+      }
+      &.right {
+        .w1 {
+          grid-column: span 12;
+        }
+        .w2 {
+          grid-column: span 12;
+          min-height: em(414);
+        }
+      }
+    }
+  }
+  &.block-full-height {
+    .w1 {
+      grid-column: 1 / span 4;
+    }
+  }
+  &.block-floating,
+  &.block-full-height {
+    .w2 {
+      grid-column: span 12;
+    }
+  }
+
+  /** Block-overlay specific css **/
+  &.block-overlay {
+    min-height: unset;
+    height: em(480);
+    box-sizing: content-box;
+    gap: 0;
+    .w1 {
+      width: em(533);
+      height: max-content;
+      margin-right: 0;
+      &:before {
+        display: none;
+      }
+      @media screen and (max-width: ($bp-tablet - 1)) {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+    .w2 {
+      height: em(400);
+      picture {
+        &:before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          display: block;
+          top: 0;
+          left: 0;
+          position: absolute;
+          background-color: var(--tm_neutral_0);
+          opacity: calc(var(--transparency) * 0.01 / 2);
+        }
+      }
+      img {
+        object-position: top;
+      }
+    }
+    &.left {
+      .w1 {
+        display: grid;
+        align-items: center;
+        grid-column: 1 / span 12;
+      }
+    }
+    @media (min-width: ($bp-tablet)) {
+      height: em(400);
+    }
+    &.left,
+    &.right {
+      .w2 {
+        grid-column: 1 / span 12;
+      }
+    }
+
+    .w3 {
+      height: auto;
+    }
+    @media (max-width: ($bp-tablet - 1)) {
+      box-sizing: border-box;
+      position: relative;
+      .w1 {
+        margin: unset;
+        width: 100%;
+        top: -20em;
+        position: absolute;
+      }
+    }
+  }
+
+  /** Block-floating specific css **/
+  @media (min-width: ($bp-tablet)) {
+    &.block-floating {
+      &.opacity {
+        .w1 {
+          &:before {
+            opacity: calc(var(--transparency) * 0.01);
+          }
+          min-height: 50%;
+          height: auto;
+        }
+      }
+      &.offset {
+        .w1 {
+          position: absolute;
+          min-height: calc(var(--floating_box_height) * 1%);
+          left: calc(var(--horizontal-offset) * 1%);
+          top: calc(var(--vertical-offset) * 1%);
+        }
+      }
+    }
+  }
+
+  /** Full height block specific css **/
+  &.block-full-height {
+    gap: 0;
+    .w1 {
+      height: 100%;
+      margin-right: 0;
+      width: 100%;
+    }
+    .w2 {
+      margin-left: 0;
+      min-height: em(414);
+    }
+    @media (max-width: ($bp-tablet - 1)) {
+      .w1 {
+        width: 100%;
+        margin: 0;
+        grid-column: 1 / span 12;
+      }
+      &.right {
+        .w1 {
+          grid-column: span 12;
+          margin: 0;
+          width: 100%;
+        }
+        .w2 {
+          grid-column: span 12;
+          min-height: em(414);
+        }
+      }
+    }
+  }
+  &.block-floating {
+    overflow: hidden;
+    gap: 0;
+    &.right {
+      .w1 {
+        @media (min-width: ($bp-tablet)) {
+          left: unset;
+          right: calc(var(--horizontal-offset) * 2%);
+          grid-column: 9 / span 4;
+          margin-right: 0vw;
+        }
+        @media (min-width: ($bp-desktop - 1)) {
+          left: unset;
+          right: calc(var(--horizontal-offset) * 2.3%);
+          grid-column: 9 / span 4;
+          margin-right: 0vw;
+        }
+      }
+    }
+    &.left {
+      .w2 {
+        grid-column: span 12;
+        @media screen and (min-width: $bp-tablet) {
+          grid-column: 1 / span 12;
+        }
+      }
+    }
+    .w1 {
+      display: grid;
+      align-items: center;
+    }
+  }
+}

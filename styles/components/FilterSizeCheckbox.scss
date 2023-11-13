@@ -1,0 +1,39 @@
+.size-chart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: em(20);
+  align-items: center;
+  .filter-items {
+    display: flex;
+    padding: em(4) em(9);
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: em(4);
+    border: 0.0625em solid var(--tm_neutral_300);
+    cursor: pointer;
+    height: 2.25em;
+    &:hover,
+    &.selected {
+      border: 0.125em solid var(--tm_neutral_800);
+    }
+    .in-stock {
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .out-off-stock {
+      text-transform: uppercase;
+      cursor: not-allowed;
+      color: var(--tm_neutral_400);
+    }
+    hr {
+      //absolute bg-gray-300 transform -rotate-45 w-[38px]
+      position: absolute;
+      background: var(--tm_neutral_300);
+      transform: rotate(-45deg);
+      height: 1px;
+      width: calc(100% + 10px);
+    }
+  }
+}

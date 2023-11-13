@@ -1,0 +1,23 @@
+.section-heading {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+
+  .center {
+    text-align: center;
+    &.w1 {
+      margin: auto;
+    }
+  }
+
+  .heading {
+    margin-bottom: em(12);
+  }
+
+  @media (min-width: $bp-tablet) {
+    .w1 {
+      max-width: 44vw;
+    }
+  }
+}

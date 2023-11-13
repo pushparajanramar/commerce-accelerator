@@ -1,0 +1,41 @@
+.quick-add {
+  display: none;
+  @media (min-width: ($bp-tablet+1px)) {
+    display: flex;
+    flex-direction: column;
+    gap: em(12);
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    padding: em(16);
+    background: var(--tm_neutral_100);
+    margin: 0 auto;
+    z-index: 1;
+    opacity: 0.97;
+
+    .add-button {
+      font-size: em(14);
+    }
+
+    .no-size-found {
+      color: var(--tm_blue);
+      font-weight: 700;
+      padding: em(8) em(16);
+    }
+
+    .size-swatch {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      label.p-sm {
+        margin-bottom: em(8);
+      }
+    }
+    .in-stock.hand,
+    .out-off-stock.hand {
+      text-transform: capitalize;
+    }
+  }
+}

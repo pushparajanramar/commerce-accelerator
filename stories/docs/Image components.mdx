@@ -1,0 +1,81 @@
+import { Meta } from "@storybook/blocks";
+import Image from "next/image";
+
+<Meta title="Docs/Image components" />
+
+# Image components
+
+Refer to:
+https://callawaybrands.atlassian.net/wiki/spaces/TCI/pages/252608522/Contentstack+Image+Set+React+Component and
+https://callawaybrands.atlassian.net/wiki/spaces/TCI/pages/251461656/Optimized+Image+React+Component
+
+<h2>Optimized Image React Component</h2>
+
+```
+<OptimizedImage
+  src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+  alt="A mountain and some fields"
+  maxFetchedWidth={1200}
+  className="foo"
+/>
+```
+
+Like its cousin the Optimized Image React Component , the ContentstackImageSet.jsx exists to serve optimized (low network request size regardless of the source image's original size), and responsive images by utilizing the Contentstack image delivery API. While the OptimizedImage.jsx component specializes in single image sources which can come from anywhere on the internet (as long as their domain has been whitelisted in Next.js), the ContentstackImageSet.jsx component’s purpose is more niche: to support custom Contentstack-sourced UI components which have the expectation of being capable of rendering different images to the three main breakpoints at use within this application’s UI (mobile → tablet → desktop). Like the OptimizedImage.jsx, this component achieves those results without needing to request those images unless and until the browser window is at the expected viewport size.
+
+To achieve this, the component takes 5 non-required props:
+imageMobile, imageTablet, and imageDesktop objects containing string attribute values required to source a WCAG-compliant image: src (alternatively url can be used instead) and alt. If 1 or 2 of the images for a given breakpoint are not provided to the component props, fallback logic within the component will seek to source them automatically from the remaining image set(s) → in this way, at no breakpoint should an image not render. In the event that 0 of 3 three image objects are provided, or 0 image objects have a valid source value, the component will render no markup. The image’s initial alt tag value is computed based on the window’s width at load time, and a debounced window event listener will update this value in the even that the window is resized to a width which changes the image source. The maxFetchWidth number value, when provided, will force the component to fetch images at no greater than the provided value’s width (to help with lowering network request sizes when an image has a known max-width in a given layout - see Optimized Image React Component | The maxFetchedWidth property:). And a className value allows for custom styles to be written for any given use of this component.
+
+<img src="CSImage1.png" width="1200" />
+<br />
+<img src="CSImage2.png" width="1200" />
+<br />
+<img src="CSImage3.png" width="1200" />
+<br />
+
+<br />
+<h2>Contentstack Image Set React Component</h2>
+
+```
+/*
+a url property (the default contentstack key name for image files)
+rather than src is also an acceptible property for a given
+image object's source value
+*/
+
+const imageMobile = {
+  alt: "Japanese mountain range with a pagota and city in the foreground",
+  src: "https://images.contentstack.io/v3/assets/bltf4ea7b6ccae44232/blt7abe958c46734890/645bbe2d70b4af0d1f97cd1a/su-san-lee-E_eWwM29wfU-unsplash.jpg",
+}
+
+const imageTablet = {
+  alt: "Seattle Space Needle",
+  src: "https://images.contentstack.io/v3/assets/bltf4ea7b6ccae44232/blt955634c8906543c0/645e79df01974d6d88d67c79/thom-milkovic-skUTVJi8-jc-unsplash.jpg",
+}
+
+const imageDesktop = {
+  alt: "Some Mountains",
+  src: "https://images.contentstack.io/v3/assets/bltf4ea7b6ccae44232/bltd9baaf2bac36cd36/645e7cda3929fd2b3140279c/neil-rosenstech-6xvUPyAuFiQ-unsplash.jpg",
+}
+
+<ContenstackImageSet
+  imageMobile={imageMobile}
+  imageTablet={imageTablet}
+  imageDesktop={imageDesktop}
+  maxFetchedWidth={1200}
+  className="foo"
+/>
+```
+
+The purpose of the `OptimizedImage.jsx` component is to only serve a responsive image at the appropriate size for any given viewport, regardless of the source image's original size, meaning source images can be very large and of very high quality without creating large file size network requests. It does this with picture source sets, Next.js Image optimizations and the Contentstack image delivery API, rather than hiding and revealing image variation sets (i.e. an image for mobile, another for tablet, and another at desktop) at different sizes based on CSS. This is important because all images hidden and revealed with CSS make network requests regardless of whether they are rendered or not, which slow down page speed load times.
+
+The component accepts the same 3 core properties that a style-able + WCAG-ready image requires: an alt attribute value, a src attribute value, and a className value. So the refactor for a regular image html element might look something link this:
+
+The `maxFetchedWidth` property:
+It also accepts 1 important and additional prop labelled maxFetchedWidth. As the prop name implies, it is intended to prevent additional network requests to larger images as the screen size grows. An example use case for this important property would be an OptimizedImage.jsx being used within a grid of card links:
+
+<img src="OptimizedImageComponent.png" width="700" />
+In this layout, the images in these cards will only ever need to be a maximum width
+of 306 pixels. Providing a maxFetchedWidthproperty value of 306 to the OptimizedImage
+component responsible for rendering the image will ensure that an image near that
+size is the largest that will ever be requested from the application, regardless
+of the source image's original size.

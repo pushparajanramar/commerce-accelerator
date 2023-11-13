@@ -1,0 +1,71 @@
+
+{
+        "categories": [
+          {
+            "name": "Women",
+            "subcategories": [
+              {
+                "name": "Tops",
+                "id":"0441",
+                "products": [
+                  {
+                    "name": "tees",
+                    "id": "0446"
+                  },
+                  {
+                    "name": "shirts and tops",
+                    "id": "0451"
+                  },
+                  {
+                    "name": "hoodies and pullovers",
+                    "id": "0450"
+                  },
+                  {
+                    "name": "jackets",
+                    "id": "0449"
+                  }, 
+                  {
+                    "name": "polos",
+                    "id": "0445"
+                  }                                       
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Men",
+            "subcategories": [
+                {
+                    "name": "tops",
+                    "id":"013",
+                    "products": [
+                        {
+                        "name": "polos",
+                        "id": "0131"
+                        },                    
+                      {
+                        "name": "tees",
+                        "id": "0132"
+                      },
+                      {
+                        "name": "button-ups",
+                        "id": "0139"
+                      },
+                      {
+                        "name": "quarter zips",
+                        "id": "0134"
+                      },
+                      {
+                        "name": "outerwear",
+                        "id": "0449"
+                      }, 
+                      {
+                        "name": "youth tops",
+                        "id": "0136"
+                      }                                   
+                    ]
+                  }
+            ]
+          }
+        ]
+      }

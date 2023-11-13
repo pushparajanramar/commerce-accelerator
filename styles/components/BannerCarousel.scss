@@ -1,0 +1,52 @@
+.banner-carousel {
+  padding: em(12) 0 em(30);
+  @media only screen and (min-width: $bp-tablet) {
+    padding: em(32) 0;
+  }
+  .image-wrapper {
+    @media only screen and (min-width: $bp-tablet) {
+      padding: em(26) em(32);
+      padding-top: 0;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: auto;
+    }
+  }
+  .slick-dots {
+    @media only screen and (min-width: $bp-tablet) {
+      bottom: em(-8);
+    }
+    li {
+      margin: 0;
+    }
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    content: "";
+  }
+
+  .slick-next,
+  .slick-next:hover,
+  .slick-next:focus {
+    display: none !important;
+    @media (min-width: ($bp-tablet)) {
+      right: em(-10);
+      display: block !important;
+      background: var(--tm-right-chevron) no-repeat right center;
+    }
+  }
+  .slick-prev,
+  .slick-prev:hover,
+  .slick-prev:focus {
+    display: none !important;
+
+    @media (min-width: ($bp-tablet)) {
+      left: em(-15);
+      z-index:1;
+      display: block !important;
+      background: var(--tm-left-chevron) no-repeat right center;
+    }
+  }
+}

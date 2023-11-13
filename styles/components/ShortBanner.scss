@@ -1,0 +1,30 @@
+.short-banner {
+  .banner-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: em(28);
+    padding: em(41) em(19) em(12) em(19);
+    background: var(--bg-color);
+
+    .banner-content {
+      display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+      text-align: center;
+      color: var(--text-color);
+      @media (min-width: ($bp-tablet+1px)){
+        row-gap: 8px;
+      }
+    }
+    @media (min-width: ($bp-tablet+1px)) {
+      justify-content: space-evenly;
+      flex-direction: row;
+      width: 100%;
+      height: var(--min-height, em(180));
+      padding: 0;
+      gap: 0;
+    }
+  }
+}
+

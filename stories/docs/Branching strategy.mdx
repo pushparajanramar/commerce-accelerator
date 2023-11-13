@@ -1,0 +1,23 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Docs/Branching strategy" />
+
+# Branching strategy
+
+The **Gitflow workflow** is a branching model that provides a structured approach for parallel development and release management. It distinguishes between two main branches: `master` and `develop`.
+
+Here's a high-level overview of how the Gitflow workflow works:
+
+1. **Master Branch**: The `master` branch represents the production-ready state of your website. It should only contain stable and thoroughly tested code. Direct commits to the `master` branch should be limited and primarily reserved for production releases.
+
+2. **Develop Branch**: The `develop` branch serves as the main branch for ongoing development work. It should be the most up-to-date and reflect the current state of development. Feature branches are typically merged into the `develop` branch.
+
+3. **Feature Branches**: For each new feature or significant update, you create a dedicated branch off the `develop` branch. These branches allow for isolated development work on specific features or improvements. Once the feature is completed and tested, it can be merged back into the `develop` branch.
+
+4. **Release Branches**: When you are preparing for a new release, you create a release branch off the `develop` branch. This branch is used for finalizing and stabilizing the release, addressing any last-minute issues, and performing release-specific tasks (e.g., versioning, documentation updates). Once the release is ready, it is merged into both the `develop` and `master` branches.
+
+5. **Hotfix Branches**: In case critical bugs or issues are discovered in the production code (on the `master` branch), you create a hotfix branch off the `master` branch. Hotfix branches allow you to quickly address the problem and apply the fix. Once the hotfix is completed, it is merged into both the `develop` and `master` branches.
+
+Using the Gitflow workflow provides a clear separation between development work and production releases. It ensures that the `master` branch remains stable and ready for deployment while allowing continuous development on the `develop` branch. Feature branches, release branches, and hotfix branches help manage parallel work and provide a structured approach to collaboration.
+
+You can view a detailed explanation of the workflow here: [GitFlow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)

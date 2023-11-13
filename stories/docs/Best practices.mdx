@@ -1,0 +1,180 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta
+  title="Docs/Best Practices"
+  parameters={{
+    previewTabs: {
+      canvas: { hidden: true },
+    },
+  }}
+/>
+
+# Best Practices for CSS in Storybook Components
+
+In this storybook, we will follow best practices for writing CSS in our components. These practices will help us maintain consistency, improve reusability, and prevent potential conflicts in our styles. Let's get started!
+
+## - Install and Configure Prettier
+
+Prettier is a code formatter that ensures consistent styling across our codebase. Install Prettier in your development environment as defined in the [Code linting section](https://travismathew-storybook.vercel.app/?path=/docs/docs-code-linting--docs)
+
+## - Avoid Redefining HTML Elements
+
+We will refrain from redefining HTML elements like \`h1\`, \`p\`, \`button\`, etc. Instead, we'll import and use the existing ones available in the project.
+
+## - Use \`em\` Units Instead of Pixels
+
+Using \`em\` units allows us to create responsive designs as \`em\` units are relative to the font size of the parent element.
+
+## - Always Namespace Your Components
+
+Always namespace your component's CSS classes to prevent conflicts with other styles. Always use kebab-case for your class naming, and use the full component name (please check spelling!).
+Words are separated by hyphens, and all letters are lowercase.
+For example:
+
+```jsx
+<section className="half-width-banner-and-text">
+  {/* Content goes here */}
+</section>
+```
+
+## - Avoid Creating Unnecessary Wrappers, and follow convention
+
+We will avoid creating wrappers like \`.container1\`, as these wrappers can lead to confusion and unnecessary dependencies. Instead, please refer to the [documentation](https://travismathew-storybook.vercel.app/?path=/docs/docs-css-methodology--docs#conventions-for-internal-component-wrappers) for more information on internal component wrappers.
+
+## - Leverage CSS for Positioning, and React/JS for component logic
+
+Instead of using event listeners to detect viewport width, we should leverage CSS for positioning Using CSS helps optimize performance, especially on mobile devices.
+We should never add css properties (like display:flex) via JS in our components because this makes it harder to update.
+When we receive props from a component, there are two types of properties: either we get a specific value (eg: we get a background image url, or we get the desired component height), or we get a value that we need to respond to (eg: component is aligned left or right)
+
+There are two patterns the we should follow.
+
+- 1. In the first case, where we have a property that we want to use directly in our component, we should pass that to our css by converting the value to a css variable. Once we have it as a css variable, we can freely use it in our css.
+
+```jsx
+const componentStyles = {
+  "--image-height": `${props.component_height}px`,
+};
+```
+
+Once we have that value as a css variable, we can then use it in our css
+
+```scss
+.half-width-banner-and-text {
+  ...
+  min-height: var(--image-height);
+}
+```
+
+We can even use this pattern to set background images. Eg:
+
+```jsx
+const imageStyles = {
+  "--desktop-image-url": `url(${props.images.desktop})`,
+  "--mobile-image-url": `url(${props.images.mobile})`,
+};
+```
+
+Once we have that value as a css variable, we can then use it in our css
+
+```scss
+.half-width-banner-and-text {
+  ...
+  .w2 {
+    ...
+    &.image {
+    ...
+      background-image: var(--desktop-image-url);
+    }
+  }
+}
+
+@media screen and (max-width: $bp-tablet) {
+.half-width-banner-and-text {
+  ...
+  .w2 {
+    ...
+    &.image {
+    ...
+      background-image: var(--tablet-image-url);
+    }
+  }
+}
+
+```
+
+- 2. In the second case, if we have a paremeter that defines how the component should be laid out and it's not directly a property we want to use, eg: `right`, then it's ok to use a ternary to set the class on the component. Eg:
+
+```jsx
+<div className={`w1 ${props?.alignment === "right" ? "right" : ""}`}>
+```
+
+Please note that the only thing we're doing is setting a class via js. The rest of the styling should happen in the component's css. Eg:
+
+```scss
+.half-width-banner-and-text {
+    ...
+  .w1 {
+    ...
+    &.right {
+      flex-direction: row-reverse;
+      .w2 {
+        padding-right: 9.063em;
+        padding-left: 0;
+      }
+    }
+  }
+```
+
+To summarize, the only time we should use react to set positioning is by adding a class to an element.
+
+## - Use SCSS for Separation of Concerns
+
+Avoid using CSS modules and opt for SCSS for better separation of concerns. Import the SCSS file and add the required class directly. For instance:
+
+```jsx
+import "../../../styles/components/SectionHeading.scss";
+
+const Component = () => {
+  return <div className="section-heading">{/* Content goes here */}</div>;
+};
+```
+
+## - Utilize Global SCSS Media Queries
+
+We have already defined three global media queries in the \`tm.scss\` file: \`$bp-mobile\`, \`$bp-tablet\`, and \`$bp-desktop\`. When writing media queries in your component's SCSS, make use of these predefined variables instead of defining them from scratch.
+
+Here's an example of how you can use the global media queries in your component's SCSS:
+
+```scss
+// Define styles for mobile devices using the global media query
+@media screen and (max-width: $bp-mobile) {
+  .component {
+    /* Mobile styles here */
+  }
+}
+
+// Define styles for tablets using the global media query
+@media screen and (min-width: $bp-mobile) and (max-width: $bp-tablet) {
+  .component {
+    /* Tablet styles here */
+  }
+}
+
+// Define styles for desktops using the global media query
+@media screen and (min-width: $bp-tablet) {
+  .component {
+    /* Desktop styles here */
+  }
+}
+```
+
+## - Prioritize Reusability over Layout-Based Classes
+
+Avoid defining classes like \`.button1\`, \`.button2\`, etc., based on layout. Instead, focus on creating reusable and generic classes that can be used across different components.
+
+By following these best practices, we can ensure clean, maintainable, and scalable CSS for our Storybook components. Let's work together to create an outstanding UI library! 🚀
+
+## - Component testing
+
+Start building your storybook as you develop your component, as it'll allow you to test it easily and independently.

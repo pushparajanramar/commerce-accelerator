@@ -1,0 +1,247 @@
+.tm-input {
+  box-sizing: content-box;
+
+  border: 1px solid var(--tm_neutral_100);
+  display: inline-flex;
+  position: relative;
+  color: var(--tm_neutral_800);
+  min-height: 2.25em;
+  width: 100%;
+
+  input {
+    font-size: 0.75em;
+    padding-left: 0.75em;
+    padding-right: 3em;
+    width: calc(100% - 2.5em);
+
+    &:active,
+    &:focus {
+      color: var(--tm_neutral_900);
+    }
+  }
+
+  button {
+    height: 100%;
+    width: 2em;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+
+    &:after {
+      content: "";
+      background-repeat: no-repeat;
+      height: 20px;
+      background-image: var(--tm-info);
+      position: relative;
+      background-position: center;
+      background-repeat: no-repeat;
+      top: 0;
+      right: 0.75em;
+      display: block;
+      background-position: right;
+      color: var(--tm_neutral_100);
+    }
+  }
+
+  .label {
+    font-size: 0.625em;
+    position: absolute;
+    top: -1.6em;
+  }
+  &.search {
+    button {
+      &:after {
+        background-image: var(--tm-search);
+      }
+    }
+  }
+}
+
+.tm-checkbox {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 2;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  [role="checkbox"] {
+    display: inline-flex;
+    cursor: pointer;
+    line-height: 1.5;
+    font-size: 0.875em;
+    margin-left: 1em;
+  }
+
+  [role="checkbox"]::before {
+    left: -1em;
+    position: relative;
+    content: var(--tm-checkbox-inactive);
+  }
+
+  [role="checkbox"][aria-checked="true"]::before {
+    position: relative;
+    content: var(--tm-checkbox-active);
+  }
+
+  [role="checkbox"]:hover {
+    cursor: pointer;
+  }
+}
+
+.tm-radio {
+  h2 {
+    margin-bottom: 1em;
+  }
+  [role="radiogroup"] {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  [role="radiogroup"]:focus {
+    outline: none;
+  }
+
+  [role="radio"] {
+    margin: 0 1.5em 0 0;
+    font-size: 0.875em;
+    border: 0 solid transparent;
+    border-radius: 5px;
+    display: inline-flex;
+    position: relative;
+    cursor: default;
+    outline: none;
+    color: black;
+  }
+
+  [role="radio"] + [role="radio"] {
+    margin-left: 1em;
+  }
+
+  [role="radio"]::before {
+    position: relative;
+    left: -0.1em;
+    content: var(--tm-radiobutton-inactive);
+  }
+
+  [role="radio"][aria-checked="true"]::before {
+    position: relative;
+    content: var(--tm-radiobutton-active);
+  }
+  label {
+    margin-left: 1em;
+  }
+}
+
+// refactor
+
+.combo *,
+.combo *::before,
+.combo *::after {
+  box-sizing: border-box;
+}
+
+.combo {
+  display: block;
+  margin-bottom: 1.5em;
+  max-width: 400px;
+  position: relative;
+}
+
+.combo::after {
+  border-bottom: 2px solid rgb(0 0 0 / 75%);
+  border-right: 2px solid rgb(0 0 0 / 75%);
+  content: "";
+  display: block;
+  height: 12px;
+  pointer-events: none;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translate(0, -65%) rotate(45deg);
+  width: 12px;
+}
+
+.combo-input {
+  background-color: #f5f5f5;
+  border: 2px solid rgb(0 0 0 / 75%);
+  border-radius: 4px;
+  display: block;
+  font-size: 1em;
+  min-height: calc(1.4em + 26px);
+  padding: 12px 16px 14px;
+  text-align: left;
+  width: 100%;
+}
+
+.open .combo-input {
+  border-radius: 4px 4px 0 0;
+}
+
+.combo-input:focus {
+  border-color: #0067b8;
+  box-shadow: 0 0 4px 2px #0067b8;
+  outline: 4px solid transparent;
+}
+
+.combo-label {
+  display: block;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 0.25em;
+}
+
+.combo-menu {
+  background-color: #f5f5f5;
+  border: 1px solid rgb(0 0 0 / 75%);
+  border-radius: 0 0 4px 4px;
+  display: none;
+  max-height: 300px;
+  overflow-y: scroll;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  z-index: 100;
+}
+
+.open .combo-menu {
+  display: block;
+}
+
+.combo-option {
+  padding: 10px 12px 12px;
+}
+
+.combo-option:hover {
+  background-color: rgb(0 0 0 / 10%);
+}
+
+.combo-option.option-current {
+  outline: 3px solid #0067b8;
+  outline-offset: -3px;
+}
+
+.combo-option[aria-selected="true"] {
+  padding-right: 30px;
+  position: relative;
+}
+
+.combo-option[aria-selected="true"]::after {
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  content: "";
+  height: 16px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translate(0, -50%) rotate(45deg);
+  width: 8px;
+}

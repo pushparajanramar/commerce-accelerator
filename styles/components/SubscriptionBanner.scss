@@ -1,0 +1,92 @@
+.subscription-banner {
+  text-align: center;
+  background-color: var(--tm_neutral_100);
+  display: flex;
+
+  @media only screen and (min-width: $bp-tablet) {
+    min-height: em(410);
+  }
+
+  .w1 {
+    margin: auto;
+    padding: 0 em(18);
+
+    @media only screen and (min-width: $bp-tablet) {
+      max-width: em(700);
+      width: 100%;
+
+      >div {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+
+    .message {
+      margin-top: em(12);
+      margin-bottom: em(32);
+    }
+
+    .join-form {
+      margin-top: em(12);
+
+      @media only screen and (min-width: $bp-tablet) {
+        margin-bottom: em(32);
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+
+        .tm-input {
+          border: 1px solid var(--tm_neutral_300);
+          background: var(--tm_neutral_100);
+          border-radius: 0;
+          max-width: em(250);
+          
+          input {
+            width: 100%;
+            padding-right: em(12);
+            &.error{
+                border: 1px solid var(--tm_red);
+              
+            }
+          }
+          
+        }
+      }
+      .error-message{
+        position: absolute;
+        padding: 0.5em 0;
+        max-width: 23.75em;
+        text-align: left;
+        margin: 0 auto;
+        bottom: -30px;
+        color: var(--tm_red);
+      }
+
+
+    }
+
+    .disclaimer {
+      max-width: em(600);
+      width: 100%;
+
+      @media only screen and (max-width: $bp-tablet) {
+        display: none;
+      }
+    }
+
+    .check-icon {
+      background-image: var(--tm-check-icon);
+      height: em(60);
+      width: em(60);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: inline-block;
+    }
+  }
+}

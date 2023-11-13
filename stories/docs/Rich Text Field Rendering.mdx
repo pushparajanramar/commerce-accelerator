@@ -1,0 +1,12 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Docs/Rich Text Field Rendering" />
+
+# Rich Text Field Rendering
+
+When developing components against the Figma design, often times we need to use a Contentstack Rich Text Field, which will allow the user to automatically produce text wrapped in a heading tag or p tag.
+However, from the app side, we shouldn't hard-code these tags into the app (so that they can flow in from Contentstack), and at the same time, we need a tag so that the component shows something.
+
+To make it easier for developers, we have a utility class in /lib/contentRenderer.js, called renderRichTextField. By importing this function into your component, you can define a "fallback" rendering tag for the content.
+For example, if the design on Figma shows an `<h4>` tag, but it's a rich text field, then we can code this: `renderRichTextField(title, "h4")` , which will detect if the title has a heading tag and use that if it does, and if it doesn't then it'll render an h4 (eg: the h4 is the fallback).
+You can see it in use in FAQAccordion.
